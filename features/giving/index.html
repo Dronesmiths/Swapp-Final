@@ -5,35 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Giving | SWAPP Church Management</title>
-    <meta name="description"
-        content="Simplify church giving with SWAPP's secure online donation platform. Accept tithes, track giving, and encourage generosity.">
     <link rel="canonical" href="https://swapp.church/features/giving/">
-
-    <!-- Fonts -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"SoftwareApplication","name":"SWAPP Online Giving","applicationCategory":"BusinessApplication","description":"Simplify church giving with SWAPP's secure online donation platform. Accept tithes, track giving, and encourage generosity.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"SWAPP","url":"https://swapp.church"}}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does SWAPP's online giving work?","acceptedAnswer":{"@type":"Answer","text":"Members can give directly from the SWAPP app or website using credit cards, debit cards, ACH transfers, or digital wallets. Donations are processed securely and deposited directly into your church's bank account."}},{"@type":"Question","name":"Is SWAPP's giving platform secure?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. SWAPP uses bank-level encryption and is PCI-compliant. All transactions are processed securely, and your members' financial data is fully protected."}},{"@type":"Question","name":"Can members set up recurring donations?","acceptedAnswer":{"@type":"Answer","text":"Yes! Members can set up automatic giving on their schedule—weekly, bi-weekly, or monthly. This makes consistent stewardship easy and convenient."}},{"@type":"Question","name":"Can I generate giving reports and tax statements?","acceptedAnswer":{"@type":"Answer","text":"Yes, SWAPP provides detailed giving reports and can automatically generate year-end tax statements for your donors. You can track trends, see designated giving, and gain insights into your church's financial health."}},{"@type":"Question","name":"What are the fees for online giving?","acceptedAnswer":{"@type":"Answer","text":"SWAPP offers competitive processing rates. Contact us or start your free trial to learn more about pricing and see how SWAPP can simplify your church's giving."}}]}
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
-
-    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
     <link rel="stylesheet" href="../../css/styles.css?v=2.0">
-
     <style>
         .feature-hero {
             background: linear-gradient(135deg, #f0fdf4, #dcfce7);
             padding: 120px 20px 80px;
             font-family: 'Poppins', sans-serif;
-            text-align: center;
+            text-align: center
         }
 
         .feature-hero h1 {
             font-size: 48px;
             font-weight: 900;
             color: #065f46;
-            margin-bottom: 20px;
+            margin-bottom: 20px
         }
 
         .feature-hero p {
@@ -41,132 +39,32 @@
             color: #166534;
             max-width: 800px;
             margin: 0 auto 30px;
-            line-height: 1.6;
+            line-height: 1.6
         }
 
         .feature-icon {
             font-size: 64px;
             color: #22c55e;
-            margin-bottom: 20px;
+            margin-bottom: 20px
         }
 
-        .benefits-section {
-            padding: 80px 20px;
-            background: #ffffff;
-            font-family: 'Poppins', sans-serif;
-        }
+        @media (max-width:768px) {
+            .two-col-grid {
+                grid-template-columns: 1fr !important
+            }
 
-        .benefits-grid {
-            max-width: 1200px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .benefit-card {
-            background: #f0fdf4;
-            padding: 30px;
-            border-radius: 14px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s ease;
-        }
-
-        .benefit-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-            background: #dcfce7;
-        }
-
-        .benefit-card i {
-            font-size: 36px;
-            color: #22c55e;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .benefit-card h3 {
-            color: #065f46;
-            font-size: 22px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .benefit-card p {
-            color: #374151;
-            font-size: 15px;
-            line-height: 1.6;
-        }
-
-        .how-it-works {
-            padding: 80px 20px;
-            background: linear-gradient(135deg, #f0fdf4, #dcfce7);
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .how-it-works h2 {
-            text-align: center;
-            font-size: 36px;
-            font-weight: 900;
-            color: #065f46;
-            margin-bottom: 50px;
-        }
-
-        .steps-container {
-            max-width: 900px;
-            margin: auto;
-            display: grid;
-            gap: 25px;
-        }
-
-        .step-card {
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 14px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            display: flex;
-            gap: 20px;
-            align-items: start;
-        }
-
-        .step-number {
-            background: #22c55e;
-            color: #fff;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            font-weight: 700;
-            flex-shrink: 0;
-        }
-
-        .step-content h3 {
-            color: #065f46;
-            font-size: 20px;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-
-        .step-content p {
-            color: #374151;
-            font-size: 15px;
-            line-height: 1.6;
+            .img-order {
+                order: -1;
+                margin-bottom: 30px
+            }
         }
     </style>
 </head>
 
 <body>
-
-    <!-- Header -->
     <header>
         <div class="container">
-            <a href="/" class="logo logo-simple">
-                <span class="wc-text">SWAPP</span>
-            </a>
+            <a href="/" class="logo logo-simple"><span class="wc-text">SWAPP</span></a>
             <nav class="nav-menu">
                 <ul>
                     <li><a href="/">Home</a></li>
@@ -182,155 +80,121 @@
             </div>
         </div>
     </header>
-
-    <!-- Hero Section -->
     <section class="feature-hero">
         <div>
             <i class="fas fa-hand-holding-heart feature-icon"></i>
             <h1>Simple, Secure Online Giving</h1>
-            <p>
-                Make giving easy for your congregation with SWAPP's secure online donation platform. Accept tithes and
-                offerings, track giving trends, and encourage generosity—all in one place.
-            </p>
+            <p>Make giving easy for your congregation with SWAPP's secure online donation platform. Accept tithes and
+                offerings, track giving trends, and encourage generosity—all in one place.</p>
             <a href="https://theswapp.io/register?referral_code=zuPaoR"
-                style="display: inline-block; background: #22c55e; color: #fff; padding: 16px 40px; border-radius: 10px; font-weight: 700; font-size: 18px; text-decoration: none; box-shadow: 0 6px 20px rgba(34, 197, 94, 0.3); transition: all 0.3s;">
-                Try SWAPP Free Today
-            </a>
+                style="display:inline-block;background:#22c55e;color:#fff;padding:16px 40px;border-radius:10px;font-weight:700;font-size:18px;text-decoration:none;box-shadow:0 6px 20px rgba(34,197,94,.3);transition:all .3s">Try
+                SWAPP Free Today</a>
         </div>
     </section>
-
-    <!-- Benefits Section -->
-    <section class="benefits-section">
-        <div style="max-width: 1200px; margin: auto; text-align: center;">
-            <h2 style="font-size: 36px; font-weight: 900; color: #065f46; margin-bottom: 20px;">
-                Giving That's Safe, Easy, and Transparent
-            </h2>
-            <p style="font-size: 18px; color: #374151; max-width: 750px; margin: auto;">
-                Remove barriers to generosity. SWAPP's giving platform makes it simple for members to give anytime,
-                anywhere—while keeping everything secure and accountable.
-            </p>
-        </div>
-
-        <div class="benefits-grid">
-            <div class="benefit-card">
-                <i class="fas fa-credit-card"></i>
-                <h3>Multiple Payment Options</h3>
-                <p>Accept credit cards, debit cards, ACH transfers, and digital wallets. Give your members flexibility.
-                </p>
+    <section style="padding:80px 20px;background:#fff;font-family:'Poppins',sans-serif">
+        <div style="max-width:1200px;margin:auto">
+            <div style="text-align:center;margin-bottom:40px">
+                <h2 style="font-size:38px;font-weight:800;color:#16a34a;margin-bottom:20px">Giving That's Safe, Easy,
+                    and Transparent</h2>
+                <p style="font-size:18px;color:#333;max-width:750px;margin:auto">Remove barriers to generosity. SWAPP's
+                    giving platform makes it simple for members to give anytime, anywhere—while keeping everything
+                    secure and accountable.</p>
             </div>
-
-            <div class="benefit-card">
-                <i class="fas fa-sync-alt"></i>
-                <h3>Recurring Donations</h3>
-                <p>Members can set up automatic giving on their schedule—weekly, bi-weekly, or monthly.</p>
-            </div>
-
-            <div class="benefit-card">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Bank-Level Security</h3>
-                <p>PCI-compliant processing and SSL encryption protect every transaction. Your members' data is safe.
-                </p>
-            </div>
-
-            <div class="benefit-card">
-                <i class="fas fa-chart-pie"></i>
-                <h3>Detailed Reports</h3>
-                <p>Track giving trends, generate year-end statements, and gain insights into your church's financial
-                    health.</p>
-            </div>
-
-            <div class="benefit-card">
-                <i class="fas fa-mobile-alt"></i>
-                <h3>Give from Anywhere</h3>
-                <p>Members can give from the app, website, or even via text message. No barriers, just generosity.</p>
-            </div>
-
-            <div class="benefit-card">
-                <i class="fas fa-tag"></i>
-                <h3>Designated Giving</h3>
-                <p>Let members designate gifts for specific funds—missions, building projects, benevolence, and more.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="how-it-works">
-        <h2>How It Works</h2>
-        <div class="steps-container">
-            <div class="step-card">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3>Set Up Your Giving Portal</h3>
-                    <p>Connect your bank account and customize your giving options. Add funds, set minimums, and brand
-                        the experience for your church.</p>
+            <div class="two-col-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center">
+                <div style="display:grid;gap:20px">
+                    <div style="background:#e6f7ef;padding:24px;border-radius:14px">
+                        <h3 style="color:#16a34a;font-weight:700;margin-bottom:8px">1. Multiple Payment Options</h3>
+                        <p style="color:#333;font-size:15px">Accept credit cards, debit cards, ACH transfers, and
+                            digital wallets. Give your members flexibility.</p>
+                    </div>
+                    <div style="background:#bbf7d0;padding:24px;border-radius:14px">
+                        <h3 style="color:#065f46;font-weight:700;margin-bottom:8px">2. Recurring Donations</h3>
+                        <p style="color:#333;font-size:15px">Members can set up automatic giving on their
+                            schedule—weekly, bi-weekly, or monthly.</p>
+                    </div>
+                    <div style="background:#86efac;padding:24px;border-radius:14px">
+                        <h3 style="color:#064e3b;font-weight:700;margin-bottom:8px">3. Detailed Reports</h3>
+                        <p style="color:#333;font-size:15px">Track giving trends, generate year-end statements, and gain
+                            insights into your church's financial health.</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="step-card">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3>Members Give Easily</h3>
-                    <p>Your congregation can give in seconds from the app or website. They choose the amount, fund, and
-                        frequency.</p>
-                </div>
-            </div>
-
-            <div class="step-card">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3>Funds Transfer Securely</h3>
-                    <p>Donations are processed securely and deposited directly into your church's bank account. Fast,
-                        safe, and reliable.</p>
-                </div>
-            </div>
-
-            <div class="step-card">
-                <div class="step-number">4</div>
-                <div class="step-content">
-                    <h3>Track & Report</h3>
-                    <p>View real-time giving data, generate reports, and send year-end tax statements to your donors
-                        automatically.</p>
+                <div class="img-order" style="text-align:center">
+                    <div
+                        style="display:inline-block;padding:16px;background:#d1fae5;border-radius:18px;box-shadow:0 6px 24px rgba(0,0,0,.08)">
+                        <img src="https://swapp.church/wp-content/uploads/2025/06/Neon-Green-SWAPP-Church-Giving-A.webp"
+                            alt="SWAPP Giving"
+                            style="width:100%;max-width:420px;border-radius:12px;display:block;margin:0 auto;box-shadow:0 8px 30px rgba(0,0,0,.15)" />
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Final CTA -->
+    <section style="padding:80px 20px;background:#f9fafb;font-family:'Poppins',sans-serif">
+        <div style="max-width:900px;margin:auto">
+            <div style="text-align:center;margin-bottom:50px">
+                <h2 style="font-size:36px;font-weight:900;color:#065f46;margin-bottom:15px">Frequently Asked Questions
+                </h2>
+                <p style="font-size:18px;color:#666">Everything you need to know about online giving</p>
+            </div>
+            <div style="display:grid;gap:20px">
+                <details style="background:#fff;padding:25px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06)">
+                    <summary style="font-size:18px;font-weight:700;color:#065f46;cursor:pointer;list-style:none"><span
+                            style="margin-right:10px">❓</span> How does SWAPP's online giving work?</summary>
+                    <p style="margin-top:15px;color:#555;line-height:1.7">Members can give directly from the SWAPP app
+                        or website using credit cards, debit cards, ACH transfers, or digital wallets. Donations are
+                        processed securely and deposited directly into your church's bank account.</p>
+                </details>
+                <details style="background:#fff;padding:25px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06)">
+                    <summary style="font-size:18px;font-weight:700;color:#065f46;cursor:pointer;list-style:none"><span
+                            style="margin-right:10px">🔒</span> Is SWAPP's giving platform secure?</summary>
+                    <p style="margin-top:15px;color:#555;line-height:1.7">Absolutely. SWAPP uses bank-level encryption
+                        and is PCI-compliant. All transactions are processed securely, and your members' financial data
+                        is fully protected.</p>
+                </details>
+                <details style="background:#fff;padding:25px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06)">
+                    <summary style="font-size:18px;font-weight:700;color:#065f46;cursor:pointer;list-style:none"><span
+                            style="margin-right:10px">🔄</span> Can members set up recurring donations?</summary>
+                    <p style="margin-top:15px;color:#555;line-height:1.7">Yes! Members can set up automatic giving on
+                        their schedule—weekly, bi-weekly, or monthly. This makes consistent stewardship easy and
+                        convenient.</p>
+                </details>
+                <details style="background:#fff;padding:25px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06)">
+                    <summary style="font-size:18px;font-weight:700;color:#065f46;cursor:pointer;list-style:none"><span
+                            style="margin-right:10px">📊</span> Can I generate giving reports and tax statements?
+                    </summary>
+                    <p style="margin-top:15px;color:#555;line-height:1.7">Yes, SWAPP provides detailed giving reports
+                        and can automatically generate year-end tax statements for your donors. You can track trends,
+                        see designated giving, and gain insights into your church's financial health.</p>
+                </details>
+                <details style="background:#fff;padding:25px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06)">
+                    <summary style="font-size:18px;font-weight:700;color:#065f46;cursor:pointer;list-style:none"><span
+                            style="margin-right:10px">💰</span> What are the fees for online giving?</summary>
+                    <p style="margin-top:15px;color:#555;line-height:1.7">SWAPP offers competitive processing rates.
+                        Contact us or start your free trial to learn more about pricing and see how SWAPP can simplify
+                        your church's giving.</p>
+                </details>
+            </div>
+        </div>
+    </section>
     <section class="swapp-cta">
         <div class="swapp-cta-inner">
             <h2>Ready to Simplify Church Giving?</h2>
-            <p>
-                Join hundreds of churches using SWAPP to encourage generosity and stewardship.
-                Start your free trial today—no credit card required.
-            </p>
+            <p>Join hundreds of churches using SWAPP to encourage generosity and stewardship. Start your free trial
+                today—no credit card required.</p>
             <div class="swapp-cta-buttons">
-                <a href="https://theswapp.io/register?referral_code=zuPaoR" class="btn-hero">
-                    Start Free Trial
-                </a>
-                <a href="/church-app/" class="btn-hero-secondary">
-                    Explore All Features
-                </a>
+                <a href="https://theswapp.io/register?referral_code=zuPaoR" class="btn-hero">Start Free Trial</a>
+                <a href="/church-app/" class="btn-hero-secondary">Explore All Features</a>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
     <footer class="aw-footer">
         <div class="container aw-footer-inner">
             <div class="aw-footer-brand">
                 <h3>SWAPP</h3>
                 <p>All-in-One Church App + CRM</p>
-                <p class="aw-footer-phone">
-                    <span>📞</span>
-                    <a href="tel:6169148392">(616) 914-8392</a>
-                </p>
-                <p class="aw-footer-email">
-                    <span>✉️</span>
-                    <a href="/contact/">Contact Us</a>
-                </p>
+                <p class="aw-footer-phone"><span>📞</span><a href="tel:6169148392">(616) 914-8392</a></p>
+                <p class="aw-footer-email"><span>✉️</span><a href="/contact/">Contact Us</a></p>
             </div>
-
             <div class="aw-footer-services">
                 <h4>Quick Links</h4>
                 <ul>
@@ -340,7 +204,6 @@
                     <li><a href="https://theswapp.io/register?referral_code=zuPaoR">Start Free Trial</a></li>
                 </ul>
             </div>
-
             <div class="aw-footer-locations">
                 <h4>Support</h4>
                 <ul>
@@ -350,20 +213,14 @@
                 </ul>
             </div>
         </div>
-
         <div class="aw-footer-bottom">
-            <p>© <span id="year"></span> SWAPP. All rights reserved. |
-                <a href="/sitemap.xml" style="color: inherit; text-decoration: underline;">Sitemap</a> |
-                <a href="/privacy/" style="color: inherit; text-decoration: underline;">Privacy Policy</a>
-            </p>
+            <p>© <span id="year"></span> SWAPP. All rights reserved. | <a href="/sitemap.xml"
+                    style="color:inherit;text-decoration:underline">Sitemap</a> | <a href="/privacy/"
+                    style="color:inherit;text-decoration:underline">Privacy Policy</a></p>
         </div>
     </footer>
-
     <script src="../../js/script.js"></script>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-
+    <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
 </body>
 
 </html>

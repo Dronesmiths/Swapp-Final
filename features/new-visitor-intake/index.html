@@ -8,19 +8,19 @@
     <meta name="description"
         content="Welcome first-time guests with SWAPP's visitor intake system. Capture contact info, track engagement, and follow up seamlessly.">
     <link rel="canonical" href="https://swapp.church/features/new-visitor-intake/">
-
-    <!-- Fonts -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"SoftwareApplication","name":"SWAPP Visitor Intake","applicationCategory":"BusinessApplication","description":"Welcome first-time guests with SWAPP's visitor intake system. Capture contact info, track engagement, and follow up seamlessly.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"SWAPP","url":"https://swapp.church"}}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does SWAPP's visitor intake system work?","acceptedAnswer":{"@type":"Answer","text":"SWAPP makes welcoming guests simple. Visitors can fill out digital forms on tablets, phones, or kiosks. Their information instantly syncs to your church database, and you can set up automated welcome messages and follow-up tasks immediately."}},{"@type":"Question","name":"Do visitors need to download an app to check in?","acceptedAnswer":{"@type":"Answer","text":"No! Visitors can fill out forms using any web browser on tablets or kiosks you provide. No app download required, making it quick and frictionless for first-time guests."}},{"@type":"Question","name":"Is visitor information secure?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. All visitor data is encrypted and stored securely. SWAPP is fully compliant with data protection standards, ensuring your guests' information is safe and private."}},{"@type":"Question","name":"Can I automatically send welcome emails to new visitors?","acceptedAnswer":{"@type":"Answer","text":"Yes! SWAPP can automatically send personalized welcome emails or text messages to new visitors immediately after they check in. You can customize the message to match your church's voice."}},{"@type":"Question","name":"How much does the visitor intake feature cost?","acceptedAnswer":{"@type":"Answer","text":"SWAPP offers a free trial with no credit card required. Pricing varies based on church size. Start your free trial to see how SWAPP can transform your guest experience."}}]}
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
-
-    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
     <link rel="stylesheet" href="../../css/styles.css?v=2.0">
-
     <style>
         .feature-hero {
             background: linear-gradient(135deg, #f0fdf4, #dcfce7);
@@ -50,123 +50,23 @@
             margin-bottom: 20px;
         }
 
-        .benefits-section {
-            padding: 80px 20px;
-            background: #ffffff;
-            font-family: 'Poppins', sans-serif;
-        }
+        @media (max-width: 768px) {
+            .two-col-grid {
+                grid-template-columns: 1fr !important;
+            }
 
-        .benefits-grid {
-            max-width: 1200px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .benefit-card {
-            background: #f0fdf4;
-            padding: 30px;
-            border-radius: 14px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s ease;
-        }
-
-        .benefit-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-            background: #dcfce7;
-        }
-
-        .benefit-card i {
-            font-size: 36px;
-            color: #22c55e;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .benefit-card h3 {
-            color: #065f46;
-            font-size: 22px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .benefit-card p {
-            color: #374151;
-            font-size: 15px;
-            line-height: 1.6;
-        }
-
-        .how-it-works {
-            padding: 80px 20px;
-            background: linear-gradient(135deg, #f0fdf4, #dcfce7);
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .how-it-works h2 {
-            text-align: center;
-            font-size: 36px;
-            font-weight: 900;
-            color: #065f46;
-            margin-bottom: 50px;
-        }
-
-        .steps-container {
-            max-width: 900px;
-            margin: auto;
-            display: grid;
-            gap: 25px;
-        }
-
-        .step-card {
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 14px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            display: flex;
-            gap: 20px;
-            align-items: start;
-        }
-
-        .step-number {
-            background: #22c55e;
-            color: #fff;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            font-weight: 700;
-            flex-shrink: 0;
-        }
-
-        .step-content h3 {
-            color: #065f46;
-            font-size: 20px;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-
-        .step-content p {
-            color: #374151;
-            font-size: 15px;
-            line-height: 1.6;
+            .img-order {
+                order: -1;
+                margin-bottom: 30px;
+            }
         }
     </style>
 </head>
 
 <body>
-
-    <!-- Header -->
     <header>
         <div class="container">
-            <a href="/" class="logo logo-simple">
-                <span class="wc-text">SWAPP</span>
-            </a>
+            <a href="/" class="logo logo-simple"><span class="wc-text">SWAPP</span></a>
             <nav class="nav-menu">
                 <ul>
                     <li><a href="/">Home</a></li>
@@ -183,151 +83,126 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="feature-hero">
         <div>
             <i class="fas fa-user-plus feature-icon"></i>
             <h1>Welcome Every Guest with Confidence</h1>
-            <p>
-                Make a lasting first impression with SWAPP's visitor intake system. Capture contact information, track
-                engagement, and ensure every guest feels welcomed and valued.
-            </p>
+            <p>Make a lasting first impression with SWAPP's visitor intake system. Capture contact information, track
+                engagement, and ensure every guest feels welcomed and valued.</p>
             <a href="https://theswapp.io/register?referral_code=zuPaoR"
-                style="display: inline-block; background: #22c55e; color: #fff; padding: 16px 40px; border-radius: 10px; font-weight: 700; font-size: 18px; text-decoration: none; box-shadow: 0 6px 20px rgba(34, 197, 94, 0.3); transition: all 0.3s;">
-                Try SWAPP Free Today
-            </a>
+                style="display:inline-block;background:#22c55e;color:#fff;padding:16px 40px;border-radius:10px;font-weight:700;font-size:18px;text-decoration:none;box-shadow:0 6px 20px rgba(34,197,94,.3);transition:all .3s">Try
+                SWAPP Free Today</a>
         </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section class="benefits-section">
-        <div style="max-width: 1200px; margin: auto; text-align: center;">
-            <h2 style="font-size: 36px; font-weight: 900; color: #065f46; margin-bottom: 20px;">
-                Turn First-Time Visitors Into Family
-            </h2>
-            <p style="font-size: 18px; color: #374151; max-width: 750px; margin: auto;">
-                Don't let visitors slip through the cracks. SWAPP helps you capture, track, and follow up with every
-                guest who walks through your doors.
-            </p>
-        </div>
-
-        <div class="benefits-grid">
-            <div class="benefit-card">
-                <i class="fas fa-clipboard-list"></i>
-                <h3>Digital Check-In</h3>
-                <p>Guests can fill out visitor cards on tablets, phones, or kiosks. No more lost paper forms.</p>
+    <section style="padding:80px 20px;background:#fff;font-family:'Poppins',sans-serif">
+        <div style="max-width:1200px;margin:auto">
+            <div style="text-align:center;margin-bottom:40px">
+                <h2 style="font-size:38px;font-weight:800;color:#16a34a;margin-bottom:20px">Turn First-Time Visitors
+                    Into Family</h2>
+                <p style="font-size:18px;color:#333;max-width:750px;margin:auto">Don't let visitors slip through the
+                    cracks. SWAPP helps you capture, track, and follow up with every guest who walks through your doors.
+                </p>
             </div>
-
-            <div class="benefit-card">
-                <i class="fas fa-database"></i>
-                <h3>Instant Database Sync</h3>
-                <p>Visitor information automatically syncs to your church database. Access it anytime, anywhere.</p>
-            </div>
-
-            <div class="benefit-card">
-                <i class="fas fa-envelope"></i>
-                <h3>Automated Follow-Up</h3>
-                <p>Send welcome emails or texts immediately. Schedule follow-up tasks for your team.</p>
-            </div>
-
-            <div class="benefit-card">
-                <i class="fas fa-chart-bar"></i>
-                <h3>Track Engagement</h3>
-                <p>See when visitors return, what events they attend, and how they're connecting with your church.</p>
-            </div>
-
-            <div class="benefit-card">
-                <i class="fas fa-user-tag"></i>
-                <h3>Custom Fields</h3>
-                <p>Collect the information that matters to your ministry—prayer requests, interests, family details, and
-                    more.</p>
-            </div>
-
-            <div class="benefit-card">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Secure & Private</h3>
-                <p>All visitor data is encrypted and protected. GDPR and privacy-compliant.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="how-it-works">
-        <h2>How It Works</h2>
-        <div class="steps-container">
-            <div class="step-card">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3>Set Up Your Visitor Form</h3>
-                    <p>Customize your digital visitor card with the fields you need. Add questions about interests,
-                        prayer requests, or how they heard about your church.</p>
+            <div class="two-col-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center">
+                <div style="display:grid;gap:20px">
+                    <div style="background:#e6f7ef;padding:24px;border-radius:14px">
+                        <h3 style="color:#16a34a;font-weight:700;margin-bottom:8px">1. Digital Check-In</h3>
+                        <p style="color:#333;font-size:15px">Guests can fill out visitor cards on tablets, phones, or
+                            kiosks. No more lost paper forms.</p>
+                    </div>
+                    <div style="background:#bbf7d0;padding:24px;border-radius:14px">
+                        <h3 style="color:#065f46;font-weight:700;margin-bottom:8px">2. Instant Database Sync</h3>
+                        <p style="color:#333;font-size:15px">Visitor information automatically syncs to your church
+                            database. Access it anytime, anywhere.</p>
+                    </div>
+                    <div style="background:#86efac;padding:24px;border-radius:14px">
+                        <h3 style="color:#064e3b;font-weight:700;margin-bottom:8px">3. Automated Follow-Up</h3>
+                        <p style="color:#333;font-size:15px">Send welcome emails or texts immediately. Schedule
+                            follow-up
+                            tasks for your team.</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="step-card">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3>Guests Fill Out the Form</h3>
-                    <p>Visitors complete the form on a tablet at your welcome desk, on their own phone via QR code, or
-                        through your church app.</p>
-                </div>
-            </div>
-
-            <div class="step-card">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3>Instant Notification</h3>
-                    <p>Your team receives immediate alerts when a new visitor checks in. View their information and any
-                        special notes.</p>
-                </div>
-            </div>
-
-            <div class="step-card">
-                <div class="step-number">4</div>
-                <div class="step-content">
-                    <h3>Follow Up & Connect</h3>
-                    <p>Send automated welcome messages, assign follow-up tasks to your team, and track every interaction
-                        until they become part of your church family.</p>
+                <div class="img-order" style="text-align:center">
+                    <div
+                        style="display:inline-block;padding:16px;background:#d1fae5;border-radius:18px;box-shadow:0 6px 24px rgba(0,0,0,.08)">
+                        <img src="https://swapp.church/wp-content/uploads/2025/06/Custom-Church-Prayer-APP-SWAPP.webp"
+                            alt="SWAPP Visitor Intake"
+                            style="width:100%;max-width:320px;border-radius:12px;display:block;margin:0 auto;box-shadow:0 8px 30px rgba(0,0,0,.15)" />
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Final CTA -->
+    <section style="padding:80px 20px;background:#f9fafb;font-family:'Poppins',sans-serif">
+        <div style="max-width:900px;margin:auto">
+            <div style="text-align:center;margin-bottom:50px">
+                <h2 style="font-size:36px;font-weight:900;color:#065f46;margin-bottom:15px">Frequently Asked Questions
+                </h2>
+                <p style="font-size:18px;color:#666">Everything you need to know about visitor intake</p>
+            </div>
+            <div style="display:grid;gap:20px">
+                <details style="background:#fff;padding:25px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06)">
+                    <summary style="font-size:18px;font-weight:700;color:#065f46;cursor:pointer;list-style:none"><span
+                            style="margin-right:10px">❓</span> How does SWAPP's visitor intake system work?</summary>
+                    <p style="margin-top:15px;color:#555;line-height:1.7">SWAPP makes welcoming guests simple. Visitors
+                        can fill out digital forms on tablets, phones, or kiosks. Their information instantly syncs to
+                        your church database, and you can set up automated welcome messages and follow-up tasks
+                        immediately.</p>
+                </details>
+                <details style="background:#fff;padding:25px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06)">
+                    <summary style="font-size:18px;font-weight:700;color:#065f46;cursor:pointer;list-style:none"><span
+                            style="margin-right:10px">📱</span> Do visitors need to download an app to check in?
+                    </summary>
+                    <p style="margin-top:15px;color:#555;line-height:1.7">No! Visitors can fill out forms using any web
+                        browser on tablets or kiosks you provide. No app download required, making it quick and
+                        frictionless for first-time guests.</p>
+                </details>
+                <details style="background:#fff;padding:25px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06)">
+                    <summary style="font-size:18px;font-weight:700;color:#065f46;cursor:pointer;list-style:none"><span
+                            style="margin-right:10px">🔒</span> Is visitor information secure?</summary>
+                    <p style="margin-top:15px;color:#555;line-height:1.7">Absolutely. All visitor data is encrypted and
+                        stored securely. SWAPP is fully compliant with data protection standards, ensuring your guests'
+                        information is safe and private.</p>
+                </details>
+                <details style="background:#fff;padding:25px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06)">
+                    <summary style="font-size:18px;font-weight:700;color:#065f46;cursor:pointer;list-style:none"><span
+                            style="margin-right:10px">✉️</span> Can I automatically send welcome emails to new visitors?
+                    </summary>
+                    <p style="margin-top:15px;color:#555;line-height:1.7">Yes! SWAPP can automatically send personalized
+                        welcome emails or text messages to new visitors immediately after they check in. You can
+                        customize the message to match your church's voice.</p>
+                </details>
+                <details style="background:#fff;padding:25px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06)">
+                    <summary style="font-size:18px;font-weight:700;color:#065f46;cursor:pointer;list-style:none"><span
+                            style="margin-right:10px">💰</span> How much does the visitor intake feature cost?</summary>
+                    <p style="margin-top:15px;color:#555;line-height:1.7">SWAPP offers a free trial with no credit card
+                        required. Pricing varies based on church size. Start your free trial to see how SWAPP can
+                        transform your guest experience.</p>
+                </details>
+            </div>
+        </div>
+    </section>
     <section class="swapp-cta">
         <div class="swapp-cta-inner">
             <h2>Ready to Welcome More Guests?</h2>
-            <p>
-                Join hundreds of churches using SWAPP to create a warm, organized welcome experience.
-                Start your free trial today—no credit card required.
-            </p>
+            <p>Join hundreds of churches using SWAPP to create a warm, organized welcome experience. Start your free
+                trial today—no credit card required.</p>
             <div class="swapp-cta-buttons">
-                <a href="https://theswapp.io/register?referral_code=zuPaoR" class="btn-hero">
-                    Start Free Trial
-                </a>
-                <a href="/church-app/" class="btn-hero-secondary">
-                    Explore All Features
-                </a>
+                <a href="https://theswapp.io/register?referral_code=zuPaoR" class="btn-hero">Start Free Trial</a>
+                <a href="/church-app/" class="btn-hero-secondary">Explore All Features</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="aw-footer">
         <div class="container aw-footer-inner">
             <div class="aw-footer-brand">
                 <h3>SWAPP</h3>
                 <p>All-in-One Church App + CRM</p>
-                <p class="aw-footer-phone">
-                    <span>📞</span>
-                    <a href="tel:6169148392">(616) 914-8392</a>
-                </p>
-                <p class="aw-footer-email">
-                    <span>✉️</span>
-                    <a href="/contact/">Contact Us</a>
-                </p>
+                <p class="aw-footer-phone"><span>📞</span><a href="tel:6169148392">(616) 914-8392</a></p>
+                <p class="aw-footer-email"><span>✉️</span><a href="/contact/">Contact Us</a></p>
             </div>
-
             <div class="aw-footer-services">
                 <h4>Quick Links</h4>
                 <ul>
@@ -337,7 +212,6 @@
                     <li><a href="https://theswapp.io/register?referral_code=zuPaoR">Start Free Trial</a></li>
                 </ul>
             </div>
-
             <div class="aw-footer-locations">
                 <h4>Support</h4>
                 <ul>
@@ -347,20 +221,14 @@
                 </ul>
             </div>
         </div>
-
         <div class="aw-footer-bottom">
-            <p>© <span id="year"></span> SWAPP. All rights reserved. |
-                <a href="/sitemap.xml" style="color: inherit; text-decoration: underline;">Sitemap</a> |
-                <a href="/privacy/" style="color: inherit; text-decoration: underline;">Privacy Policy</a>
-            </p>
+            <p>© <span id="year"></span> SWAPP. All rights reserved. | <a href="/sitemap.xml"
+                    style="color:inherit;text-decoration:underline">Sitemap</a> | <a href="/privacy/"
+                    style="color:inherit;text-decoration:underline">Privacy Policy</a></p>
         </div>
     </footer>
-
     <script src="../../js/script.js"></script>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-
+    <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
 </body>
 
 </html>
