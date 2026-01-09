@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWAPP APP - All In One Church Software and CRM</title>
+    <meta name="description"
+        content="Grow Your Church with SWAPP, the all-in-one church app that unites outreach, prayer, events, giving, and group messaging. Stay organized, and keep track of all tasks.">
+    <link rel="canonical" href="https://swapp.church/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://swapp.church/">
+    <meta property="og:title" content="SWAPP APP - All In One Church Software and CRM">
+    <meta property="og:description"
+        content="Grow Your Church with SWAPP, the all-in-one church app that unites outreach, prayer, events, giving, and group messaging. Stay organized, and keep track of all tasks.">
+    <meta property="og:image" content="https://swapp.church/images/swapp-og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://swapp.church/">
+    <meta property="twitter:title" content="SWAPP APP - All In One Church Software and CRM">
+    <meta property="twitter:description"
+        content="Grow Your Church with SWAPP, the all-in-one church app that unites outreach, prayer, events, giving, and group messaging. Stay organized, and keep track of all tasks.">
+    <meta property="twitter:image" content="https://swapp.church/images/swapp-og-image.png">
+
+    <!-- Schema Markup for Software Application -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "SWAPP",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Church Management Software",
+      "description": "All-in-one church app and CRM for managing giving, events, outreach, messaging, prayer, and follow-ups. Mobile-first platform built specifically for churches and ministries.",
+      "operatingSystem": "iOS, Android, Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free trial available"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "250"
+      },
+      "url": "https://swapp.church",
+      "screenshot": "https://swapp.church/images/swapp-screenshot.png",
+      "featureList": [
+        "Event Management",
+        "Prayer Wall",
+        "Giving & Donations",
+        "Outreach Tracking",
+        "Group Messaging",
+        "Follow-up Management",
+        "Check-in System"
+      ]
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css?v=2.0">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="/" class="logo logo-simple">
+                <span class="wc-text">SWAPP</span>
+            </a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="/church-app/">Church App</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:6169148392" class="phone-link mobile-hide"><i class="fas fa-phone"></i> (616) 914-8392</a>
+                <a href="https://theswapp.io/register?referral_code=zuPaoR" class="btn btn-primary">Start Free Trial</a>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ⭐ SWAPP HERO (FINAL VERSION WITH BLUE ANIMATED CTAs + VIDEO SLIDE 1) -->
+    <section id="hero">
+        <div id="swappHeroSlider">
+
+            <!-- ⭐ SLIDE 1 — VIDEO BACKGROUND -->
+            <div class="slide active">
+                <video autoplay muted loop playsinline class="slide-video">
+                    <source src="https://swapp.church/wp-content/uploads/2025/12/Prospect-Managment-Software.mp4"
+                        type="video/mp4">
+                </video>
+
+                <div class="slide-content">
+                    <h4>What Is SWAPP?</h4>
+                    <h1>A Complete Church App + CRM</h1>
+                    <p>SWAPP is a mobile-first church app and lightweight church CRM. Manage giving, events, outreach,
+                        messaging, prayer, and follow-ups in one place.</p>
+
+                    <div class="hero-ctas">
+                        <a href="https://theswapp.io/register?referral_code=zuPaoR" class="cta-primary">Start Free
+                            Trial</a>
+                        <a href="#features" class="cta-secondary">See Features ↓</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Controls -->
+            <div class="slider-controls">
+                <div id="sliderDots"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ⭐ SWAPP Highlight Section with CTA Above Pastor -->
+    <section id="features"
+        style="padding:120px 20px; background:linear-gradient(135deg,#f8fff9,#e6f7ef); font-family:'Poppins',sans-serif; position:relative; overflow:hidden;">
+
+        <!-- WALKING PASTOR (WEBP) -->
+        <img id="pastorWalk" src="https://swapp.church/wp-content/uploads/2025/11/PAstor-at-a-churh.webp"
+            style="position:absolute; bottom:20px; left:0; width:180px; z-index:5; transition:left 1s linear, top 1s linear, transform 0.3s;">
+
+        <!-- TITLE -->
+        <div style="max-width:1200px; margin:auto; text-align:center;">
+            <h2 style="font-size:42px; font-weight:900; color:#065f46; margin-bottom:20px;">
+                Ministry Made Simple (and Actually Fun)
+            </h2>
+            <p style="font-size:18px; color:#444; margin-bottom:50px; max-width:800px; margin:auto;">
+                Watch as the pastor highlights each part of SWAPP — exactly how the app guides your ministry team. ✨
+            </p>
+        </div>
+
+        <!-- CARD ROW -->
+        <div id="funCards"
+            style="max-width:1200px; margin:auto; display:flex; justify-content:space-between; gap:20px; flex-wrap:nowrap;">
+
+            <div class="fun-card">
+                <h3>Outreach</h3>
+                <p>Routes and follow-ups handled automatically.</p>
+            </div>
+
+            <div class="fun-card">
+                <h3>Prayer</h3>
+                <p>A living prayer wall that grows with your people.</p>
+            </div>
+
+            <div class="fun-card">
+                <h3>Giving</h3>
+                <p>Donations in seconds — reports in one click.</p>
+            </div>
+
+            <div class="fun-card">
+                <h3>Events</h3>
+                <p>Check-ins and schedules without the chaos.</p>
+            </div>
+
+            <div class="fun-card">
+                <h3>Messaging</h3>
+                <p>One app. One inbox. Full connection.</p>
+            </div>
+
+        </div>
+
+        <!-- CTA (in front of pastor) -->
+        <div style="text-align:center; margin-top:60px; position:relative; z-index:20;">
+            <a href="https://theswapp.io/register?referral_code=zuPaoR"
+                style="display:inline-block; background:#22c55e; padding:18px 46px; border-radius:12px; font-weight:700; color:#fff; text-decoration:none; font-size:20px; box-shadow:0 6px 20px rgba(0,0,0,0.15); position:relative; z-index:20;">
+                Try SWAPP Free Today
+            </a>
+        </div>
+    </section>
+
+    <!-- ⭐ EVENTS SECTION — PASTOR WALKS TO VIDEO THUMBNAIL + POPUP MODAL -->
+    <section id="events"
+        style="padding:120px 20px; background:#f9fdfb; font-family:'Poppins',sans-serif; position:relative; overflow:visible;">
+
+        <!-- 🚶‍♂️ Pastor Character -->
+        <img id="pastorEvents" src="https://swapp.church/wp-content/uploads/2025/11/PAstor-at-a-churh.webp" style="
+             position:absolute;
+             bottom:20px;
+             left:-220px;
+             width:180px;
+             z-index:30;
+             pointer-events:none;
+             transition:left 2.2s linear, bottom .8s ease, transform .6s ease;
+           ">
+
+        <!-- Title -->
+        <div style="max-width:1200px; margin:auto; text-align:center;">
+            <h2 style="font-size:38px; font-weight:800; color:#16a34a; margin-bottom:20px;">
+                How to Do Events with SWAPP
+            </h2>
+            <p style="font-size:18px; color:#333; max-width:750px; margin:auto;">
+                With SWAPP, planning and running church events is simple. From setup to check-ins, you can manage
+                everything right inside the app.
+            </p>
+        </div>
+
+        <!-- Content Layout -->
+        <div id="eventsGrid"
+            style="max-width:1200px; margin:auto; margin-top:40px; display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;">
+
+            <!-- Left Steps -->
+            <div style="display:grid; gap:20px;">
+
+                <div style="background:#e6f7ef; padding:24px; border-radius:14px;">
+                    <h3 style="color:#16a34a; font-weight:700; margin-bottom:8px;">1. Create Your Event</h3>
+                    <p style="color:#333; font-size:15px;">
+                        Add your service, outreach, or special gathering in just a few taps. Set the time, location, and
+                        details for your church family.
+                    </p>
+                </div>
+
+                <div style="background:#bbf7d0; padding:24px; border-radius:14px;">
+                    <h3 style="color:#065f46; font-weight:700; margin-bottom:8px;">2. Invite & Share</h3>
+                    <p style="color:#333; font-size:15px;">
+                        Send invites directly through the app or share links on social media. Everyone stays informed
+                        without extra tools.
+                    </p>
+                </div>
+
+                <div style="background:#86efac; padding:24px; border-radius:14px;">
+                    <h3 style="color:#064e3b; font-weight:700; margin-bottom:8px;">3. Track Attendance</h3>
+                    <p style="color:#333; font-size:15px;">
+                        Use built-in check-ins for services, classes, or events. See who came, follow up with absentees,
+                        and keep your ministry connected.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Right: Video Thumbnail Card (Pastor walks to this) -->
+            <div style="text-align:center;">
+                <div id="eventsVideoCard"
+                    style="display:inline-block; padding:16px; background:#d1fae5; border-radius:18px; box-shadow:0 6px 24px rgba(0,0,0,0.08); position:relative; cursor:pointer;">
+
+                    <!-- Video Thumbnail -->
+                    <img id="eventsVideoThumb"
+                        src="https://swapp.church/wp-content/uploads/2025/06/Church-APP-Events.webp"
+                        alt="SWAPP Events Demo Video"
+                        style="width:100%; max-width:420px; border-radius:12px; display:block; margin:0 auto; box-shadow:0 8px 30px rgba(0,0,0,0.15);">
+
+                    <!-- Play Button Overlay -->
+                    <div style="
+              position:absolute;
+              left:50%; top:50%;
+              transform:translate(-50%,-50%);
+              width:80px; height:80px;
+              border-radius:50%;
+              background:#ffffffee;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              box-shadow:0 8px 24px rgba(0,0,0,0.25);
+              pointer-events:none;
+            ">
+                        <span style="font-size:32px; color:#16a34a; margin-left:4px;">▶</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 🌙 Modal Overlay for Actual Video -->
+        <div id="eventsVideoModal" style="
+             position:fixed;
+             inset:0;
+             background:rgba(0,0,0,0.7);
+             display:none;
+             align-items:center;
+             justify-content:center;
+             z-index:2000;
+           ">
+            <div
+                style="background:#000; padding:10px; border-radius:14px; max-width:900px; width:95%; position:relative;">
+                <!-- Close Button -->
+                <button id="eventsModalClose" style="
+                    position:absolute;
+                    top:-10px; right:-10px;
+                    width:32px; height:32px;
+                    border-radius:50%;
+                    border:none;
+                    background:#ffffff;
+                    color:#111827;
+                    font-weight:bold;
+                    cursor:pointer;
+                    box-shadow:0 4px 12px rgba(0,0,0,0.4);
+                  ">✕</button>
+
+                <!-- Replace src with your real video URL (YouTube/Vimeo or MP4) -->
+                <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:10px;">
+                    <!-- Example YouTube embed, swap the src -->
+                    <iframe id="eventsVideoFrame" src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0"
+                        title="SWAPP Events Demo"
+                        style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 🙏 Prayer Requests with SWAPP -->
+    <section id="prayer" style="padding:80px 20px; background:#ffffff; font-family:'Poppins',sans-serif;">
+        <div style="max-width:1200px; margin:auto;">
+
+            <!-- Title -->
+            <div style="text-align:center; margin-bottom:30px;">
+                <h2 style="font-size:38px; font-weight:800; color:#16a34a; margin-bottom:20px;">
+                    Prayer Requests Made Simple
+                </h2>
+                <p style="font-size:18px; color:#333; max-width:750px; margin:auto;">
+                    Keep your congregation connected in prayer. SWAPP gives your church a dedicated prayer wall where
+                    members can post requests, lift each other up, and see God's answers together.
+                </p>
+            </div>
+
+            <!-- Content Layout -->
+            <div class="prayer-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;">
+
+                <!-- Left: Steps -->
+                <div class="prayer-steps" style="display:grid; gap:20px;">
+
+                    <div style="background:#f0fdf4; padding:24px; border-radius:14px;">
+                        <h3 style="color:#15803d; font-weight:700; margin-bottom:8px;">1. Share Requests</h3>
+                        <p style="color:#333; font-size:15px;">
+                            Anyone in your church can post a prayer request directly from the app, keeping the community
+                            engaged and cared for.
+                        </p>
+                    </div>
+
+                    <div style="background:#bbf7d0; padding:24px; border-radius:14px;">
+                        <h3 style="color:#065f46; font-weight:700; margin-bottom:8px;">2. Pray Together</h3>
+                        <p style="color:#333; font-size:15px;">
+                            Members can comment, mark requests as prayed for, and encourage each other in real time.
+                        </p>
+                    </div>
+
+                    <div style="background:#86efac; padding:24px; border-radius:14px;">
+                        <h3 style="color:#064e3b; font-weight:700; margin-bottom:8px;">3. Celebrate Answers</h3>
+                        <p style="color:#333; font-size:15px;">
+                            Requests can be updated with praise reports when prayers are answered, strengthening faith
+                            across your community.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Right: Image -->
+                <div class="prayer-image" style="text-align:center;">
+                    <div
+                        style="display:inline-block; padding:16px; background:#d1fae5; border-radius:18px; box-shadow:0 6px 24px rgba(0,0,0,0.08);">
+                        <img src="https://swapp.church/wp-content/uploads/2025/06/Custom-Church-Prayer-APP-SWAPP.webp"
+                            alt="SWAPP Church Prayer Requests Feature"
+                            style="width:100%; max-width:320px; border-radius:12px; display:block; margin:0 auto; box-shadow:0 8px 30px rgba(0,0,0,0.15);" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔄 Follow-Up with SWAPP -->
+    <section id="follow-up" style="padding:80px 20px; background:#ffffff; font-family:'Poppins',sans-serif;">
+        <div style="max-width:1200px; margin:auto;">
+
+            <!-- Title -->
+            <div style="text-align:center; margin-bottom:30px;">
+                <h2 style="font-size:38px; font-weight:800; color:#16a34a; margin-bottom:20px;">
+                    Smarter Follow-Ups Made Easy
+                </h2>
+                <p style="font-size:18px; color:#333; max-width:750px; margin:auto;">
+                    SWAPP helps your ministry stay connected. From first-time visitors to ongoing discipleship, every
+                    follow-up is simple, organized, and effective.
+                </p>
+            </div>
+
+            <!-- Content Layout -->
+            <div class="follow-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;">
+
+                <!-- Left: Steps -->
+                <div class="follow-steps" style="display:grid; gap:20px;">
+
+                    <div style="background:#f0fdf4; padding:24px; border-radius:14px;">
+                        <h3 style="color:#15803d; font-weight:700; margin-bottom:8px;">1. Capture Contacts</h3>
+                        <p style="color:#333; font-size:15px;">
+                            Collect visitor details during events, check-ins, or online forms and instantly sync them
+                            into your ministry app.
+                        </p>
+                    </div>
+
+                    <div style="background:#bbf7d0; padding:24px; border-radius:14px;">
+                        <h3 style="color:#065f46; font-weight:700; margin-bottom:8px;">2. Assign Follow-Ups</h3>
+                        <p style="color:#333; font-size:15px;">
+                            Delegate calls, texts, or visits to leaders and volunteers, ensuring no one falls through
+                            the cracks.
+                        </p>
+                    </div>
+
+                    <div style="background:#86efac; padding:24px; border-radius:14px;">
+                        <h3 style="color:#064e3b; font-weight:700; margin-bottom:8px;">3. Track Progress</h3>
+                        <p style="color:#333; font-size:15px;">
+                            Monitor outreach status and see when follow-ups are completed, helping your team stay
+                            accountable and effective.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Right: Image -->
+                <div class="follow-image" style="text-align:center;">
+                    <div
+                        style="display:inline-block; padding:16px; background:#d1fae5; border-radius:18px; box-shadow:0 6px 24px rgba(0,0,0,0.08);">
+                        <img src="https://swapp.church/wp-content/uploads/2025/06/Prospecting-and-follow-up-Looping-video.webp"
+                            alt="SWAPP Church Follow-Up Tools"
+                            style="width:100%; max-width:320px; border-radius:12px; display:block; margin:0 auto; box-shadow:0 8px 30px rgba(0,0,0,0.15);" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌍 Outreach with SWAPP -->
+    <section id="outreach" style="padding:80px 20px; background:#ffffff; font-family:'Poppins',sans-serif;">
+        <div style="max-width:1200px; margin:auto;">
+
+            <!-- Title -->
+            <div style="text-align:center; margin-bottom:30px;">
+                <h2 style="font-size:38px; font-weight:800; color:#16a34a; margin-bottom:20px;">
+                    Outreach Made Simple
+                </h2>
+                <p style="font-size:18px; color:#333; max-width:750px; margin:auto;">
+                    SWAPP makes outreach practical and powerful. Assign routes, track visits, and follow up with your
+                    community in real time.
+                </p>
+            </div>
+
+            <!-- Content Layout -->
+            <div class="outreach-grid"
+                style="display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;">
+
+                <!-- Left: Steps -->
+                <div class="outreach-steps" style="display:grid; gap:20px;">
+
+                    <div style="background:#f0fdf4; padding:24px; border-radius:14px;">
+                        <h3 style="color:#15803d; font-weight:700; margin-bottom:8px;">1. Assign Routes</h3>
+                        <p style="color:#333; font-size:15px;">
+                            Leaders can map out specific areas, giving each volunteer clear routes to cover in the
+                            neighborhood.
+                        </p>
+                    </div>
+
+                    <div style="background:#bbf7d0; padding:24px; border-radius:14px;">
+                        <h3 style="color:#065f46; font-weight:700; margin-bottom:8px;">2. Track Visits</h3>
+                        <p style="color:#333; font-size:15px;">
+                            Volunteers can mark homes as visited, leave notes, and capture important details for
+                            ministry follow-up.
+                        </p>
+                    </div>
+
+                    <div style="background:#86efac; padding:24px; border-radius:14px;">
+                        <h3 style="color:#064e3b; font-weight:700; margin-bottom:8px;">3. Follow Up</h3>
+                        <p style="color:#333; font-size:15px;">
+                            Pastors and teams can see who needs prayer, a return visit, or a simple
+                            encouragement—ensuring no one is missed.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Right: Image with frame -->
+                <div class="outreach-image" style="text-align:center;">
+                    <div
+                        style="display:inline-block; padding:16px; background:#bbf7d0; border-radius:18px; box-shadow:0 6px 24px rgba(0,0,0,0.08);">
+                        <img src="https://swapp.church/wp-content/uploads/2025/06/Outreach-Maps-Video-Loop.webp"
+                            alt="SWAPP Outreach Feature"
+                            style="width:100%; max-width:420px; border-radius:16px; display:block; margin:0 auto; box-shadow:0 8px 30px rgba(0,0,0,0.15);" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌱 SWAPP Tools Slider Section -->
+    <section style="padding:80px 20px; background:#f9fdfb; font-family:'Poppins',sans-serif;">
+        <div style="max-width:1200px; margin:auto; text-align:center;">
+
+            <!-- Title -->
+            <h2 style="font-size:38px; font-weight:800; color:#16a34a; margin-bottom:15px;">
+                Tools for Your Ministry
+            </h2>
+            <p style="font-size:18px; color:#333; margin-bottom:40px;">
+                Everything you need to grow, engage, and lead your church — all in one seamless platform.
+            </p>
+
+            <!-- Slider Wrapper -->
+            <div class="tools-slider" style="overflow:hidden; position:relative;">
+                <div class="tools-track">
+
+                    <!-- Outreach -->
+                    <div class="tools-card" style="background:#e6f7ef;">
+                        <h3>Outreach</h3>
+                        <p>Assign routes, track follow-ups, and reach more people with SWAPP's mapping & outreach tools.
+                        </p>
+                    </div>
+
+                    <!-- Prayer -->
+                    <div class="tools-card" style="background:#bbf7d0;">
+                        <h3>Prayer</h3>
+                        <p>Keep your congregation connected with a live prayer wall where members can share and support
+                            requests.</p>
+                    </div>
+
+                    <!-- Giving -->
+                    <div class="tools-card" style="background:#86efac;">
+                        <h3>Giving</h3>
+                        <p>Secure online giving with reporting, recurring donations, and simple management tools for
+                            your church.</p>
+                    </div>
+
+                    <!-- Events -->
+                    <div class="tools-card" style="background:#4ade80;">
+                        <h3>Events</h3>
+                        <p>Plan, schedule, and track attendance — SWAPP helps you organize events with built-in
+                            check-ins.</p>
+                    </div>
+
+                    <!-- Messaging -->
+                    <div class="tools-card" style="background:#22c55e; color:#fff;">
+                        <h3 style="color:#fff;">Messaging</h3>
+                        <p style="color:#f0fdf4;">Keep leaders and members connected with instant app messaging,
+                            announcements, and group chat.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 💝 Giving with SWAPP -->
+    <section id="giving" style="padding:80px 20px; background:#ffffff; font-family:'Poppins',sans-serif;">
+        <div style="max-width:1200px; margin:auto;">
+
+            <!-- Title -->
+            <div style="text-align:center; margin-bottom:30px;">
+                <h2 style="font-size:38px; font-weight:800; color:#16a34a; margin-bottom:20px;">
+                    Simple & Secure Giving
+                </h2>
+                <p style="font-size:18px; color:#333; max-width:750px; margin:auto;">
+                    With SWAPP, giving is safe, easy, and built right into your ministry app.
+                    Encourage generosity while keeping everything transparent and secure.
+                </p>
+            </div>
+
+            <!-- Content Layout -->
+            <div class="giving-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;">
+
+                <!-- Left: Image -->
+                <div class="giving-image" style="text-align:center;">
+                    <div
+                        style="display:inline-block; padding:16px; background:#d1fae5; border-radius:18px; box-shadow:0 6px 24px rgba(0,0,0,0.08);">
+                        <img src="https://swapp.church/wp-content/uploads/2025/06/Neon-Green-SWAPP-Church-Giving-A.webp"
+                            alt="SWAPP Church App Giving Feature"
+                            style="width:100%; max-width:420px; border-radius:12px; display:block; margin:0 auto; box-shadow:0 8px 30px rgba(0,0,0,0.15);" />
+                    </div>
+                </div>
+
+                <!-- Right: Steps -->
+                <div class="giving-steps" style="display:grid; gap:20px;">
+                    <div style="background:#f0fdf4; padding:24px; border-radius:14px;">
+                        <h3 style="color:#15803d; font-weight:700; margin-bottom:8px;">1. Flexible Options</h3>
+                        <p style="color:#333; font-size:15px;">Members can give one-time or set up recurring donations
+                            with just a few taps inside the app.</p>
+                    </div>
+
+                    <div style="background:#bbf7d0; padding:24px; border-radius:14px;">
+                        <h3 style="color:#065f46; font-weight:700; margin-bottom:8px;">2. Transparent Reporting</h3>
+                        <p style="color:#333; font-size:15px;">Leaders get clear reports and insights on giving trends,
+                            helping your church stay accountable and encouraged.</p>
+                    </div>
+
+                    <div style="background:#86efac; padding:24px; border-radius:14px;">
+                        <h3 style="color:#064e3b; font-weight:700; margin-bottom:8px;">3. Safe & Secure</h3>
+                        <p style="color:#333; font-size:15px;">Built-in PCI compliance and SSL encryption mean every
+                            transaction is protected and secure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🎉 Events with SWAPP -->
+    <section id="events-detail" style="padding:80px 20px; background:#ffffff; font-family:'Poppins',sans-serif;">
+        <div style="max-width:1200px; margin:auto;">
+
+            <!-- Content Grid -->
+            <div class="events-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;">
+
+                <!-- Left: Image -->
+                <div class="events-image" style="text-align:center;">
+                    <div
+                        style="display:inline-block; padding:16px; background:#d1fae5; border-radius:18px; box-shadow:0 6px 24px rgba(0,0,0,0.08);">
+                        <img src="https://swapp.church/wp-content/uploads/2025/06/Neon-Green-SWAPP-Church-Events-.webp"
+                            alt="SWAPP Church Events Feature"
+                            style="width:100%; max-width:420px; border-radius:16px; display:block; margin:0 auto; box-shadow:0 8px 30px rgba(0,0,0,0.15);" />
+                    </div>
+                </div>
+
+                <!-- Right: Text & Steps -->
+                <div class="events-content">
+                    <h2 style="font-size:38px; font-weight:800; color:#16a34a; margin-bottom:20px;">Organize & Celebrate
+                        with Events</h2>
+                    <p style="font-size:18px; color:#333; max-width:650px; margin-bottom:30px;">From Sunday services to
+                        special gatherings, SWAPP makes planning and managing church events smooth, engaging, and
+                        stress-free.</p>
+
+                    <div class="events-steps" style="display:grid; gap:20px;">
+                        <div style="background:#f0fdf4; padding:24px; border-radius:14px;">
+                            <h3 style="color:#15803d; font-weight:700; margin-bottom:8px;">1. Easy Scheduling</h3>
+                            <p style="color:#333; font-size:15px;">Create and publish events quickly so your
+                                congregation always knows what's coming up.</p>
+                        </div>
+
+                        <div style="background:#bbf7d0; padding:24px; border-radius:14px;">
+                            <h3 style="color:#065f46; font-weight:700; margin-bottom:8px;">2. Smart RSVPs</h3>
+                            <p style="color:#333; font-size:15px;">Track attendance with built-in RSVP and reminders—no
+                                extra tools needed.</p>
+                        </div>
+
+                        <div style="background:#86efac; padding:24px; border-radius:14px;">
+                            <h3 style="color:#064e3b; font-weight:700; margin-bottom:8px;">3. Boost Engagement</h3>
+                            <p style="color:#333; font-size:15px;">Encourage connection and participation with shareable
+                                event details right inside the app.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 💬 Messaging with SWAPP -->
+    <section id="messaging" style="padding:80px 20px; background:#f9fafb; font-family:'Poppins',sans-serif;">
+        <div style="max-width:1200px; margin:auto;">
+
+            <!-- Content Grid -->
+            <div class="messaging-grid"
+                style="display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;">
+
+                <!-- Left: Image -->
+                <div class="messaging-image" style="text-align:center;">
+                    <div
+                        style="display:inline-block; padding:16px; background:#d1fae5; border-radius:18px; box-shadow:0 6px 24px rgba(0,0,0,0.08);">
+                        <img src="https://swapp.church/wp-content/uploads/2025/06/Neon-Green-SWAPP-Church-Prospect.webp"
+                            alt="SWAPP Church Messaging Feature"
+                            style="width:100%; max-width:420px; border-radius:16px; display:block; margin:0 auto; box-shadow:0 8px 30px rgba(0,0,0,0.15);" />
+                    </div>
+                </div>
+
+                <!-- Right: Text & Steps -->
+                <div class="messaging-content">
+                    <h2 style="font-size:38px; font-weight:800; color:#16a34a; margin-bottom:20px;">Stay Connected with
+                        Messaging</h2>
+                    <p style="font-size:18px; color:#333; max-width:650px; margin-bottom:30px;">Keep your congregation
+                        and leaders connected with instant app messaging. Announce, encourage, and build stronger
+                        community all in one place.</p>
+
+                    <div class="messaging-steps" style="display:grid; gap:20px;">
+                        <div style="background:#f0fdf4; padding:24px; border-radius:14px;">
+                            <h3 style="color:#15803d; font-weight:700; margin-bottom:8px;">1. Announce Instantly</h3>
+                            <p style="color:#333; font-size:15px;">Share updates, reminders, and announcements that
+                                reach your whole church in seconds.</p>
+                        </div>
+
+                        <div style="background:#bbf7d0; padding:24px; border-radius:14px;">
+                            <h3 style="color:#065f46; font-weight:700; margin-bottom:8px;">2. Group Messaging</h3>
+                            <p style="color:#333; font-size:15px;">Create channels for ministries, volunteers, or
+                                leadership teams so everyone stays aligned.</p>
+                        </div>
+
+                        <div style="background:#86efac; padding:24px; border-radius:14px;">
+                            <h3 style="color:#064e3b; font-weight:700; margin-bottom:8px;">3. Encourage & Connect</h3>
+                            <p style="color:#333; font-size:15px;">Foster community by giving members a place to
+                                encourage, pray, and support each other daily.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🎯 SWAPP Bottom CTA -->
+    <section class="swapp-cta">
+        <div class="swapp-cta-inner">
+
+            <!-- Title -->
+            <h2>Ready to Transform Your Ministry?</h2>
+            <p>
+                SWAPP brings everything your church needs into one simple, powerful app.
+                Outreach, giving, events, and discipleship—right at your fingertips.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="swapp-cta-buttons">
+                <a href="https://theswapp.io/register?referral_code=zuPaoR" class="btn-hero">
+                    Start Free Trial
+                </a>
+                <a href="https://swapp.church/church-app/" class="btn-hero-secondary">
+                    Learn More
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="aw-footer">
+        <div class="container aw-footer-inner">
+
+            <!-- Brand & Contact -->
+            <div class="aw-footer-brand">
+                <h3>SWAPP</h3>
+                <p>All-in-One Church App + CRM</p>
+                <p class="aw-footer-phone">
+                    <span>📞</span>
+                    <a href="tel:6169148392">(616) 914-8392</a>
+                </p>
+                <p class="aw-footer-email">
+                    <span>✉️</span>
+                    <a href="/contact/">Contact Us</a>
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="aw-footer-services">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="/church-app/">Church App</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                    <li><a href="https://theswapp.io/register?referral_code=zuPaoR">Start Free Trial</a></li>
+                </ul>
+            </div>
+
+            <!-- Support -->
+            <div class="aw-footer-locations">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="/contact/">Contact Us</a></li>
+                    <li><a href="https://help.swapp.church">Help Center</a></li>
+                    <li><a href="/privacy/">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="aw-footer-bottom">
+            <p>© <span id="year"></span> SWAPP. All rights reserved. |
+                <a href="/sitemap.xml" style="color: inherit; text-decoration: underline;">Sitemap</a> |
+                <a href="/privacy/" style="color: inherit; text-decoration: underline;">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <!-- Inline Scripts for Hero Slider and Animations -->
+    <script>
+        // Hero Slider
+        let slides = document.querySelectorAll('#swappHeroSlider .slide');
+        let currentSlide = 0;
+        let dotsContainer = document.getElementById('sliderDots');
+
+        slides.forEach((_, i) => {
+            let dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => showSlide(i));
+            dotsContainer.appendChild(dot);
+        });
+
+        let dots = document.querySelectorAll('.dot');
+
+        function showSlide(next) {
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+
+            currentSlide = (next + slides.length) % slides.length;
+
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        setInterval(() => showSlide(currentSlide + 1), 6000);
+
+        // Pastor Walking Animation
+        const pastor = document.getElementById("pastorWalk");
+        const cards = document.querySelectorAll(".fun-card");
+        const cardsBox = document.getElementById("funCards");
+
+        let currentIndex = 0;
+        let direction = 1;
+
+        function animatePastor() {
+            const card = cards[currentIndex];
+            const mobile = window.innerWidth <= 768;
+
+            if (mobile) {
+                pastor.style.transform = "scaleX(1)";
+                let targetTop = card.offsetTop + (card.offsetHeight * 0.65);
+                pastor.style.top = targetTop + "px";
+                pastor.style.left = "10px";
+
+                setTimeout(() => {
+                    cards.forEach(c => c.classList.remove("highlight"));
+                    card.classList.add("highlight");
+                }, 450);
+
+                currentIndex++;
+                if (currentIndex >= cards.length) currentIndex = 0;
+
+            } else {
+                const rect = card.getBoundingClientRect();
+                const sectionLeft = cardsBox.getBoundingClientRect().left;
+                let targetLeft = rect.left - sectionLeft + rect.width / 2 - 80;
+
+                pastor.style.bottom = "20px";
+                pastor.style.left = targetLeft + "px";
+
+                cards.forEach(c => c.classList.remove("highlight"));
+                card.classList.add("highlight");
+
+                currentIndex += direction;
+
+                if (currentIndex >= cards.length) {
+                    currentIndex = cards.length - 1;
+                    setTimeout(() => {
+                        pastor.style.transform = "scaleX(-1)";
+                        direction = -1;
+                        currentIndex--;
+                        animatePastor();
+                    }, 600);
+                    return;
+                }
+
+                if (currentIndex < 0) {
+                    currentIndex = 0;
+                    setTimeout(() => {
+                        pastor.style.transform = "scaleX(1)";
+                        direction = 1;
+                        currentIndex++;
+                        animatePastor();
+                    }, 600);
+                    return;
+                }
+            }
+
+            setTimeout(animatePastor, 2400);
+        }
+
+        animatePastor();
+
+        // Events Section Pastor Animation
+        document.addEventListener("DOMContentLoaded", function () {
+            window.getEventsVideoTargetX = function () {
+                const card = document.getElementById("eventsVideoCard");
+                const section = document.getElementById("events");
+                if (!card || !section) return 260;
+
+                const rect = card.getBoundingClientRect();
+                const sec = section.getBoundingClientRect();
+
+                return (rect.left - sec.left) + (rect.width * 0.15);
+            };
+        });
+
+        window.addEventListener("load", function () {
+            const pastorEvents = document.getElementById("pastorEvents");
+            if (!pastorEvents) return;
+
+            const imgWalk = "https://swapp.church/wp-content/uploads/2025/11/PAstor-at-a-churh.webp";
+            const imgPoint = "https://swapp.church/wp-content/uploads/2025/11/Pastor-Pointing-Upward.webp";
+
+            function animatePastorEvents() {
+                pastorEvents.style.animation = "none";
+                pastorEvents.style.transform = "scaleX(1)";
+                pastorEvents.src = imgWalk;
+                pastorEvents.style.left = "-220px";
+
+                setTimeout(() => {
+                    if (typeof window.getEventsVideoTargetX === "function") {
+                        pastorEvents.style.left = window.getEventsVideoTargetX() + "px";
+                    } else {
+                        pastorEvents.style.left = "260px";
+                    }
+                }, 300);
+
+                setTimeout(() => {
+                    pastorEvents.src = imgPoint;
+                }, 2400);
+
+                setTimeout(() => {
+                    pastorEvents.style.animation = "hop .9s infinite ease-in-out";
+                }, 2600);
+
+                setTimeout(() => {
+                    pastorEvents.style.animation = "none";
+                    pastorEvents.src = imgWalk;
+                }, 6500);
+
+                setTimeout(() => {
+                    pastorEvents.style.transform = "scaleX(-1)";
+                }, 6800);
+
+                setTimeout(() => {
+                    pastorEvents.style.left = "-340px";
+                }, 7100);
+
+                setTimeout(() => {
+                    animatePastorEvents();
+                }, 11000);
+            }
+
+            animatePastorEvents();
+        });
+
+        // Events Video Modal
+        document.addEventListener("DOMContentLoaded", function () {
+            const card = document.getElementById("eventsVideoCard");
+            const modal = document.getElementById("eventsVideoModal");
+            const close = document.getElementById("eventsModalClose");
+            const frame = document.getElementById("eventsVideoFrame");
+
+            if (!card || !modal) return;
+
+            function openModal() {
+                modal.style.display = "flex";
+                if (frame && frame.src && !frame.src.includes("autoplay=1")) {
+                    frame.src = frame.src + (frame.src.includes("?") ? "&" : "?") + "autoplay=1";
+                }
+            }
+
+            function closeModal() {
+                modal.style.display = "none";
+                if (frame) {
+                    frame.src = frame.src.replace("&autoplay=1", "").replace("?autoplay=1", "");
+                }
+            }
+
+            card.addEventListener("click", openModal);
+            if (close) close.addEventListener("click", closeModal);
+
+            modal.addEventListener("click", function (e) {
+                if (e.target === modal) closeModal();
+            });
+
+            document.addEventListener("keydown", function (e) {
+                if (e.key === "Escape") closeModal();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
