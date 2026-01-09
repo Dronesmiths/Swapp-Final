@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church App Features | SWAPP - Complete Ministry Management</title>
+    <meta name="description"
+        content="Discover SWAPP's powerful church app features: volunteer scheduling, visitor intake, prayer requests, outreach tools, online giving, check-ins, follow-ups, group management, and live mapping.">
+    <link rel="canonical" href="https://swapp.church/church-app/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://swapp.church/church-app/">
+    <meta property="og:title" content="Church App Features | SWAPP - Complete Ministry Management">
+    <meta property="og:description"
+        content="Discover SWAPP's powerful church app features: volunteer scheduling, visitor intake, prayer requests, outreach tools, online giving, check-ins, follow-ups, group management, and live mapping.">
+    <meta property="og:image" content="https://swapp.church/images/swapp-features-og.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/styles.css?v=2.0">
+
+    <style>
+        /* Feature Cards */
+        .feature-card {
+            background: #ecfdf5;
+            border: 2px solid #bbf7d0;
+            border-radius: 16px;
+            padding: 28px;
+            text-align: center;
+            transition: all .3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 10;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+            background: #d1fae5;
+        }
+
+        .feature-card.highlight {
+            transform: translateY(-12px) scale(1.05);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+            background: #a7f3d0;
+            border: 3px solid #22c55e;
+        }
+
+        .feature-card h3 {
+            color: #065f46;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: #2f855a;
+            font-size: 15px;
+            margin: 0;
+        }
+
+        .feature-card i {
+            font-size: 36px;
+            color: #22c55e;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* Pastor Animation */
+        @keyframes hop {
+            0% {
+                bottom: 20px;
+            }
+
+            50% {
+                bottom: 48px;
+            }
+
+            100% {
+                bottom: 20px;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            #pastorFeatures {
+                display: none;
+            }
+
+            #featuresGrid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="/" class="logo logo-simple">
+                <span class="wc-text">SWAPP</span>
+            </a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="/church-app/" class="active">Church App</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:6169148392" class="phone-link mobile-hide"><i class="fas fa-phone"></i> (616) 914-8392</a>
+                <a href="https://theswapp.io/register?referral_code=zuPaoR" class="btn btn-primary">Start Free Trial</a>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+        style="background: linear-gradient(135deg, #f0fdf4, #dcfce7); padding: 100px 20px 60px; font-family: 'Poppins', sans-serif; text-align: center;">
+        <div style="max-width: 900px; margin: auto;">
+            <h1 style="font-size: 48px; font-weight: 900; color: #065f46; margin-bottom: 20px;">
+                SWAPP Church App Core Features
+            </h1>
+            <p style="font-size: 20px; color: #166534; margin-bottom: 30px; line-height: 1.6;">
+                Everything your ministry needs in one powerful, easy-to-use platform. From volunteer coordination to
+                outreach mapping, SWAPP helps your church thrive.
+            </p>
+            <a href="https://theswapp.io/register?referral_code=zuPaoR"
+                style="display: inline-block; background: #22c55e; color: #fff; padding: 16px 40px; border-radius: 10px; font-weight: 700; font-size: 18px; text-decoration: none; box-shadow: 0 6px 20px rgba(34, 197, 94, 0.3); transition: all 0.3s;">
+                Try SWAPP Free Today
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Grid with Pastor Animation -->
+    <section id="features"
+        style="background: #ffffff; padding: 80px 20px; font-family: 'Poppins', sans-serif; position: relative; overflow: hidden;">
+
+        <!-- Walking Pastor -->
+        <img id="pastorFeatures" src="https://swapp.church/wp-content/uploads/2025/11/PAstor-at-a-churh.webp" style="
+             position: absolute;
+             bottom: 20px;
+             left: -220px;
+             width: 180px;
+             z-index: 30;
+             pointer-events: none;
+             transition: left 2s linear, bottom .8s ease, transform .6s ease;
+           ">
+
+        <div style="max-width: 1200px; margin: auto; text-align: center;">
+            <h2 style="font-size: 36px; font-weight: 900; color: #22543d; margin-bottom: 50px;">
+                Explore Our Ministry Tools
+            </h2>
+
+            <!-- Features Grid -->
+            <div id="featuresGrid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px;">
+
+                <a href="/features/volunteer-scheduling/" style="text-decoration: none;">
+                    <div class="feature-card">
+                        <i class="fas fa-users-cog"></i>
+                        <h3>Volunteer Scheduling</h3>
+                        <p>Coordinate service teams with ease.</p>
+                    </div>
+                </a>
+
+                <a href="/features/new-visitor-intake/" style="text-decoration: none;">
+                    <div class="feature-card">
+                        <i class="fas fa-user-plus"></i>
+                        <h3>Visitor Intake</h3>
+                        <p>Welcome guests and track engagement.</p>
+                    </div>
+                </a>
+
+                <a href="/features/prayer-requests/" style="text-decoration: none;">
+                    <div class="feature-card">
+                        <i class="fas fa-praying-hands"></i>
+                        <h3>Prayer Requests</h3>
+                        <p>Build a prayer wall that never forgets.</p>
+                    </div>
+                </a>
+
+                <a href="/features/outreach/" style="text-decoration: none;">
+                    <div class="feature-card">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3>Outreach Tools</h3>
+                        <p>Boost your soulwinning efforts and follow-ups.</p>
+                    </div>
+                </a>
+
+                <a href="/features/giving/" style="text-decoration: none;">
+                    <div class="feature-card">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h3>Online Giving</h3>
+                        <p>Track and report tithes effortlessly.</p>
+                    </div>
+                </a>
+
+                <a href="/features/check-ins/" style="text-decoration: none;">
+                    <div class="feature-card">
+                        <i class="fas fa-clipboard-check"></i>
+                        <h3>Check-Ins</h3>
+                        <p>Securely manage class and event attendance.</p>
+                    </div>
+                </a>
+
+                <a href="/features/follow-up-and-outreach/" style="text-decoration: none;">
+                    <div class="feature-card">
+                        <i class="fas fa-tasks"></i>
+                        <h3>Follow-Up & Reports</h3>
+                        <p>Ensure no one slips through the cracks.</p>
+                    </div>
+                </a>
+
+                <a href="/features/group-management/" style="text-decoration: none;">
+                    <div class="feature-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Group Management</h3>
+                        <p>Oversee classes, ministries, and groups.</p>
+                    </div>
+                </a>
+
+                <a href="/features/mapping/" style="text-decoration: none;">
+                    <div class="feature-card">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Live Mapping</h3>
+                        <p>Visualize outreach and follow-up routes.</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why SWAPP Section -->
+    <section
+        style="background: linear-gradient(135deg, #f0fdf4, #dcfce7); padding: 80px 20px; font-family: 'Poppins', sans-serif;">
+        <div style="max-width: 1000px; margin: auto; text-align: center;">
+            <h2 style="font-size: 36px; font-weight: 900; color: #065f46; margin-bottom: 30px;">
+                Why Churches Choose SWAPP
+            </h2>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px;">
+
+                <div
+                    style="background: #fff; padding: 30px; border-radius: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    <i class="fas fa-mobile-alt" style="font-size: 40px; color: #22c55e; margin-bottom: 15px;"></i>
+                    <h3 style="color: #065f46; font-size: 20px; font-weight: 700; margin-bottom: 10px;">Mobile-First
+                        Design</h3>
+                    <p style="color: #374151; font-size: 15px;">Built for pastors and volunteers on the go. Access
+                        everything from your phone.</p>
+                </div>
+
+                <div
+                    style="background: #fff; padding: 30px; border-radius: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    <i class="fas fa-shield-alt" style="font-size: 40px; color: #22c55e; margin-bottom: 15px;"></i>
+                    <h3 style="color: #065f46; font-size: 20px; font-weight: 700; margin-bottom: 10px;">Secure &
+                        Reliable</h3>
+                    <p style="color: #374151; font-size: 15px;">Bank-level security for giving, encrypted data, and
+                        99.9% uptime guarantee.</p>
+                </div>
+
+                <div
+                    style="background: #fff; padding: 30px; border-radius: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    <i class="fas fa-heart" style="font-size: 40px; color: #22c55e; margin-bottom: 15px;"></i>
+                    <h3 style="color: #065f46; font-size: 20px; font-weight: 700; margin-bottom: 10px;">Built for
+                        Churches</h3>
+                    <p style="color: #374151; font-size: 15px;">Designed by ministry leaders who understand your unique
+                        challenges.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="swapp-cta">
+        <div class="swapp-cta-inner">
+            <h2>Ready to Simplify Your Ministry?</h2>
+            <p>
+                Join hundreds of churches using SWAPP to grow, engage, and lead their communities.
+                Start your free trial today—no credit card required.
+            </p>
+            <div class="swapp-cta-buttons">
+                <a href="https://theswapp.io/register?referral_code=zuPaoR" class="btn-hero">
+                    🙌 Try SWAPP Free
+                </a>
+                <a href="/contact/" class="btn-hero-secondary">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="aw-footer">
+        <div class="container aw-footer-inner">
+            <div class="aw-footer-brand">
+                <h3>SWAPP</h3>
+                <p>All-in-One Church App + CRM</p>
+                <p class="aw-footer-phone">
+                    <span>📞</span>
+                    <a href="tel:6169148392">(616) 914-8392</a>
+                </p>
+                <p class="aw-footer-email">
+                    <span>✉️</span>
+                    <a href="/contact/">Contact Us</a>
+                </p>
+            </div>
+
+            <div class="aw-footer-services">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/#features">Features</a></li>
+                    <li><a href="/church-app/">Church App</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                    <li><a href="https://theswapp.io/register?referral_code=zuPaoR">Start Free Trial</a></li>
+                </ul>
+            </div>
+
+            <div class="aw-footer-locations">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="/contact/">Contact Us</a></li>
+                    <li><a href="https://help.swapp.church">Help Center</a></li>
+                    <li><a href="/privacy/">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="aw-footer-bottom">
+            <p>© <span id="year"></span> SWAPP. All rights reserved. |
+                <a href="/sitemap.xml" style="color: inherit; text-decoration: underline;">Sitemap</a> |
+                <a href="/privacy/" style="color: inherit; text-decoration: underline;">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+    <!-- Pastor Walking Animation -->
+    <script>
+        window.addEventListener("load", function () {
+            const pastor = document.getElementById("pastorFeatures");
+            const cards = document.querySelectorAll("#featuresGrid .feature-card");
+            const grid = document.getElementById("featuresGrid");
+
+            if (!pastor || !cards.length) return;
+
+            let currentIndex = 0;
+            let direction = 1; // 1 = left to right, -1 = right to left
+
+            function animatePastor() {
+                const card = cards[currentIndex];
+                const mobile = window.innerWidth <= 768;
+
+                if (mobile) {
+                    // Skip animation on mobile
+                    return;
+                }
+
+                // Calculate position
+                const rect = card.getBoundingClientRect();
+                const gridRect = grid.getBoundingClientRect();
+                let targetLeft = rect.left - gridRect.left + (rect.width / 2) - 90;
+
+                // Move pastor
+                pastor.style.left = targetLeft + "px";
+                pastor.style.bottom = "20px";
+
+                // Highlight current card
+                cards.forEach(c => c.classList.remove("highlight"));
+                card.classList.add("highlight");
+
+                // Update index
+                currentIndex += direction;
+
+                // Check bounds and turn around
+                if (currentIndex >= cards.length) {
+                    currentIndex = cards.length - 1;
+                    setTimeout(() => {
+                        pastor.style.transform = "scaleX(-1)";
+                        direction = -1;
+                        currentIndex--;
+                        animatePastor();
+                    }, 800);
+                    return;
+                }
+
+                if (currentIndex < 0) {
+                    currentIndex = 0;
+                    setTimeout(() => {
+                        pastor.style.transform = "scaleX(1)";
+                        direction = 1;
+                        currentIndex++;
+                        animatePastor();
+                    }, 800);
+                    return;
+                }
+
+                // Continue animation
+                setTimeout(animatePastor, 2500);
+            }
+
+            // Start animation
+            setTimeout(animatePastor, 1000);
+        });
+
+        // Update year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
