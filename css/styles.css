@@ -24,7 +24,7 @@ body {
 /* ===== HEADER ===== */
 header {
   background: #fff;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -144,7 +144,7 @@ header .container {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(0,0,0,0.45) 35%, rgba(0,0,0,0.15) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.45) 35%, rgba(0, 0, 0, 0.15) 100%);
   z-index: 1;
 }
 
@@ -191,7 +191,7 @@ header .container {
 
 .cta-primary {
   display: inline-block;
-  background: linear-gradient(135deg,#3B82F6,#2563EB);
+  background: linear-gradient(135deg, #3B82F6, #2563EB);
   padding: 14px 36px;
   border-radius: 8px;
   font-weight: 700;
@@ -203,7 +203,7 @@ header .container {
 }
 
 .cta-primary:hover {
-  background: linear-gradient(135deg,#2563EB,#1D4ED8);
+  background: linear-gradient(135deg, #2563EB, #1D4ED8);
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 10px 28px rgba(37, 99, 235, 0.45);
 }
@@ -212,8 +212,8 @@ header .container {
   display: inline-block;
   padding: 14px 26px;
   border-radius: 8px;
-  border: 1px solid rgba(255,255,255,0.45);
-  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.15);
   color: #ffffff;
   font-weight: 700;
   text-decoration: none;
@@ -221,7 +221,7 @@ header .container {
 }
 
 .cta-secondary:hover {
-  background: rgba(255,255,255,0.28);
+  background: rgba(255, 255, 255, 0.28);
   transform: translateY(-2px) scale(1.03);
 }
 
@@ -238,7 +238,7 @@ header .container {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.6);
+  background: rgba(255, 255, 255, 0.6);
   cursor: pointer;
 }
 
@@ -252,7 +252,7 @@ header .container {
   background: #ecfdf5;
   border-radius: 20px;
   padding: 30px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   transition: all .4s ease;
   text-align: left;
   position: relative;
@@ -273,15 +273,23 @@ header .container {
 
 .fun-card.highlight {
   transform: translateY(-12px);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
   background: #d1fae5;
   border: 2px solid #22c55e;
 }
 
 @keyframes hop {
-  0% { bottom: 20px; }
-  50% { bottom: 48px; }
-  100% { bottom: 20px; }
+  0% {
+    bottom: 20px;
+  }
+
+  50% {
+    bottom: 48px;
+  }
+
+  100% {
+    bottom: 20px;
+  }
 }
 
 /* ===== TOOLS SLIDER ===== */
@@ -311,8 +319,13 @@ header .container {
 }
 
 @keyframes slideTools {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .tools-slider:hover .tools-track {
@@ -446,16 +459,18 @@ header .container {
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
+
   /* Header */
   .nav-menu {
     display: none;
     position: absolute;
-    top: 100%; /* Below header */
+    top: 100%;
+    /* Below header */
     left: 0;
     width: 100%;
     background: #fff;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 999;
   }
 
@@ -464,6 +479,8 @@ header .container {
   }
 
   .nav-menu ul {
+    display: flex;
+    /* Ensure flex is active inside the block container */
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -556,12 +573,12 @@ header .container {
     max-width: 260px !important;
   }
 
-  .prayer-steps > div,
-  .follow-steps > div,
-  .outreach-steps > div,
-  .giving-steps > div,
-  .events-steps > div,
-  .messaging-steps > div {
+  .prayer-steps>div,
+  .follow-steps>div,
+  .outreach-steps>div,
+  .giving-steps>div,
+  .events-steps>div,
+  .messaging-steps>div {
     text-align: left;
   }
 
