@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Management Blog | SWAPP Resources & Guides</title>
+    <meta name="description"
+        content="Expert guides and resources for church management. Learn how to improve volunteer coordination, visitor engagement, giving, and more with SWAPP.">
+    <link rel="canonical" href="https://swapp.church/blog/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css?v=2.0">
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px
+        }
+
+        .blog-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s
+        }
+
+        .blog-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12)
+        }
+
+        .blog-card-category {
+            background: #16a34a;
+            color: #fff;
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: 700;
+            display: inline-block;
+            margin: 20px 20px 0
+        }
+
+        .blog-card-content {
+            padding: 20px
+        }
+
+        .blog-card h3 {
+            color: #065f46;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px
+        }
+
+        .blog-card p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 15px
+        }
+
+        .blog-card a {
+            color: #16a34a;
+            font-weight: 600;
+            text-decoration: none
+        }
+
+        .blog-card a:hover {
+            text-decoration: underline
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="logo logo-simple"><span class="wc-text">SWAPP</span></a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#features">Features</a></li>
+                    <li><a href="/church-app/">Church App</a></li>
+                    <li><a href="/blog/" class="active">Blog</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:6169148392" class="phone-link mobile-hide"><i class="fas fa-phone"></i> (616) 914-8392</a>
+                <a href="https://theswapp.io/register?referral_code=zuPaoR" class="btn btn-primary">Start Free Trial</a>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero page-hero" style="background:linear-gradient(135deg,#065f46,#16a34a);padding:120px 20px 80px">
+        <div class="container">
+            <h1 style="color:#fff;font-size:48px;font-weight:900;margin-bottom:20px">Church Management Resources</h1>
+            <p style="color:#d1fae5;font-size:20px">Expert guides to help your church thrive with SWAPP</p>
+        </div>
+    </section>
+
+    <section style="padding:80px 20px;background:#f9fafb">
+        <div class="container" style="max-width:1200px">
+            <h2 style="text-align:center;font-size:36px;font-weight:900;color:#065f46;margin-bottom:50px">Latest
+                Articles</h2>
+
+            <div class="blog-grid">
+                <!-- Volunteer Scheduling Articles -->
+                <div class="blog-card">
+                    <span class="blog-card-category">Volunteer Management</span>
+                    <div class="blog-card-content">
+                        <h3>How to Reduce Volunteer No-Shows at Your Church</h3>
+                        <p>Discover proven strategies to improve volunteer reliability and keep your ministry teams
+                            fully staffed.</p>
+                        <a href="/blog/reduce-volunteer-no-shows/">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <span class="blog-card-category">Volunteer Management</span>
+                    <div class="blog-card-content">
+                        <h3>Best Practices for Church Volunteer Scheduling</h3>
+                        <p>Learn how to create efficient volunteer schedules that work for everyone in your church.</p>
+                        <a href="/blog/volunteer-scheduling-best-practices/">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <span class="blog-card-category">Volunteer Management</span>
+                    <div class="blog-card-content">
+                        <h3>How to Recruit More Church Volunteers</h3>
+                        <p>Practical tips for building a thriving volunteer culture and filling critical ministry roles.
+                        </p>
+                        <a href="/blog/recruit-church-volunteers/">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- More articles will be added programmatically -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="aw-footer">
+        <div class="container aw-footer-inner">
+            <div class="aw-footer-brand">
+                <h3>SWAPP</h3>
+                <p>All-in-One Church App + CRM</p>
+                <p class="aw-footer-phone"><span>📞</span><a href="tel:6169148392">(616) 914-8392</a></p>
+                <p class="aw-footer-email"><span>✉️</span><a href="/contact/">Contact Us</a></p>
+            </div>
+            <div class="aw-footer-services">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/#features">Features</a></li>
+                    <li><a href="/church-app/">Church App</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+            <div class="aw-footer-locations">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="/contact/">Contact Us</a></li>
+                    <li><a href="https://help.swapp.church">Help Center</a></li>
+                    <li><a href="/privacy/">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="aw-footer-bottom">
+            <p>© <span id="year"></span> SWAPP. All rights reserved. | <a href="/sitemap.xml"
+                    style="color:inherit;text-decoration:underline">Sitemap</a> | <a href="/privacy/"
+                    style="color:inherit;text-decoration:underline">Privacy Policy</a></p>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+
+</html>
