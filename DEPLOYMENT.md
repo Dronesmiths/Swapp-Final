@@ -1,46 +1,65 @@
-# Swapp Website Deployment
+# SWAPP Website Deployment
 
-This project is deployed to AWS S3 and CloudFront.
+This project is deployed to **Cloudflare Pages** and is live at [swapp.church](https://swapp.church).
 
-## Infrastructure
+## Deployment Method
 
-- **S3 Bucket**: `swapp-website` (us-east-1)
-  - Static website hosting enabled
-  - Public read access via bucket policy
-- **CloudFront Distribution**: `E1R5TB8U3KMH1`
-  - Domain: https://dfgg3028eqdkf.cloudfront.net
-  - Origin: `swapp-website.s3.us-east-1.amazonaws.com`
-  - SSL/TLS enabled (default certificate)
-  - Custom error responses (SPA support)
+**Cloudflare Pages** provides automatic deployments directly from GitHub.
 
-## Automated Deployment
+### How It Works
 
-Deployments are automated using GitHub Actions. Pushing to the `main` branch triggers the workflow defined in `.github/workflows/deploy-aws.yml`.
+1. **Push to GitHub**: Any commit pushed to the `main` branch triggers an automatic deployment
+2. **Cloudflare Builds**: Cloudflare Pages detects the push and builds the site
+3. **Auto-Deploy**: Changes go live at swapp.church within 1-3 minutes
 
-### Required GitHub Secrets
+### Repository
 
-Configure the following secrets in your GitHub repository settings:
+- **GitHub Repo**: `Dronesmiths/Swapp-Final`
+- **Branch**: `main` (production)
+- **Build Command**: None (static HTML site)
+- **Output Directory**: `/` (root)
 
-- `AWS_ACCESS_KEY_ID`: Your AWS access key
-- `AWS_SECRET_ACCESS_KEY`: Your AWS secret key
-- `AWS_S3_BUCKET`: `swapp-website`
-- `AWS_CLOUDFRONT_DISTRIBUTION_ID`: `E1R5TB8U3KMH1`
+## Deployment Status
+
+You can check deployment status in:
+- **Cloudflare Dashboard**: Pages → swapp.church → Deployments
+- **GitHub**: Recent commits will show Cloudflare deployment status
 
 ## Manual Deployment
 
-To manually deploy from your local machine (requires AWS CLI configured):
+No manual deployment needed! Just push to `main`:
 
 ```bash
-# Sync files to S3
-aws s3 sync . s3://swapp-website --exclude ".git/*" --exclude ".github/*" --delete
-
-# Invalidate CloudFront cache
-aws cloudfront create-invalidation --distribution-id E1R5TB8U3KMH1 --paths "/*"
+git add .
+git commit -m "Your commit message"
+git push origin main
 ```
 
-## Verification
+Cloudflare Pages will automatically deploy your changes.
 
-You can verify the deployment by visiting:
-- [CloudFront URL](https://dfgg3028eqdkf.cloudfront.net)
-- [S3 Website URL](http://swapp-website.s3-website-us-east-1.amazonaws.com)
- 
+## Preview Deployments
+
+Cloudflare Pages also creates preview deployments for:
+- Pull requests (before merging)
+- Non-production branches
+
+Each preview gets a unique URL for testing before going live.
+
+## Rollback
+
+To rollback to a previous version:
+1. Go to Cloudflare Dashboard → Pages → swapp.church
+2. Click "Deployments"
+3. Find the previous successful deployment
+4. Click "Rollback to this deployment"
+
+## Custom Domain
+
+- **Primary Domain**: swapp.church
+- **DNS**: Managed through Cloudflare
+- **SSL/TLS**: Automatic (Cloudflare Universal SSL)
+
+---
+
+**Last Updated**: January 23, 2026  
+**Status**: ✅ Live and auto-deploying from GitHub
