@@ -10,11 +10,45 @@
 /blog/category/* /blog/ 301
 /blog/tag/* /blog/ 301
 /blog/author/* /blog/ 301
-/wp-content/uploads/* /images/ 301
+/wp-content/* /images/ 301
+/wp-includes/* /js/ 301
+
+# Root-level Blog Posts to /blog/ (Legacy WP structure)
+/street-by-street-tracking/ /blog/track-church-outreach/ 301
+/church-app-vs-traditional-methods-for-push-notifications/ /blog/ 301
+/best-church-app-tools-for-mobile-first-church/ /blog/best-free-church-apps/ 301
+/mobile-check-in-event-logging/ /blog/church-check-in-guide/ 301
+/prospect-sharing/ /blog/church-visitor-follow-up/ 301
+/ultimate-guide-to-using-church-apps-for-check-in-systems/ /blog/church-check-in-guide/ 301
+/ultimate-guide-to-using-church-apps-for-mobile-bible-access/ /blog/ 301
+/ultimate-guide-to-using-church-apps-for-affordabe-church-tech/ /blog/ 301
+/the-role-of-mobile-apps-in-modern-online-donations/ /blog/best-church-giving-platforms/ 301
+/how-can-churches-improve-follow-up-without-burning-out-volunteers/ /blog/pastoral-care-follow-up/ 301
+/church-app-design-made-easy-with-mobile-church-apps/ /blog/ 301
+/who-can-view-and-respond-to-prayer-requests-in-swapp/ /blog/church-prayer-requests-guide/ 301
+/who-should-use-visitor-intake-forms/ /blog/church-visitor-follow-up/ 301
 
 # Consolidate Variation Redirects
 /free-church-app-2/ /free-church-app/ 301
 /free-church-app-3/ /free-church-app/ 301
+
+# General Utility Redirects
+/home/ / 301
+/contact-us/ /contact/ 301
+/privacy-policy/ /privacy/ 301
+/testimonials/ / 301
+/pricing/* /church-app/ 301
+/church-crm/ / 301
+/church-website/ / 301
+/church-app-insights/ /church-app/ 301
+/church-app/messaging/ /features/group-management/ 301
+/church-app/volunteer-scheduling/ /features/volunteer-scheduling/ 301
+/church-app/group-management/ /features/group-management/ 301
+/church-app/new-visitor-intake/ /features/new-visitor-intake/ 301
+/services-v1/* /features/ 301
+/services-v2/* /features/ 301
+/help-center/ https://help.swapp.church 301
+/faqs/ /free-church-app/#faq 301
 
 # Root/Default Redirects for common 404s
 /blog/swapp-vs-subsplash/ /blog/best-free-church-apps/ 301
