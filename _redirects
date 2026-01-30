@@ -1,0 +1,23 @@
+# Feature Redirects
+/features/prayer-wall/ /features/prayer-requests/ 301
+/features/pest-control/ /features/ 301
+/features/mosquitoes/ /features/ 301
+/features/termites/ /features/ 301
+/features/cricket-control/ /features/ 301
+/features/cockroach/ /features/ 301
+
+# Legacy Blog/WP Redirects
+/blog/category/* /blog/ 301
+/blog/tag/* /blog/ 301
+/blog/author/* /blog/ 301
+/wp-content/uploads/* /images/ 301
+
+# Consolidate Variation Redirects
+/free-church-app-2/ /free-church-app/ 301
+/free-church-app-3/ /free-church-app/ 301
+
+# Root/Default Redirects for common 404s
+/blog/swapp-vs-subsplash/ /blog/best-free-church-apps/ 301
+/swapp-vs-subsplash/ /blog/best-free-church-apps/ 301
+/blog/how-to-budget-for-a-church-app-in-2025/ /blog/ 301
+/affordable-church-apps/how-to-budget-for-a-church-app-in-2025/ /blog/ 301

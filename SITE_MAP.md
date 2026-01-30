@@ -8,7 +8,10 @@ swapp.church/
 ├── 🏠 Homepage (/)
 │   └── index.html
 │
-├── ✨ Features (/features/) ⭐ NEW!
+├── 🎁 Free Church App (/free-church-app/) ⭐ NEW!
+│   └── index.html (High-intent SEO Landing Page)
+│
+├── ✨ Features (/features/)
 │   ├── index.html (Features Landing Page)
 │   │
 │   ├── /features/giving/
@@ -49,43 +52,7 @@ swapp.church/
 │   │   ├── /blog/encourage-online-giving/
 │   │   └── /blog/increase-church-giving/
 │   │
-│   ├── Prayer & Community:
-│   │   ├── /blog/building-prayer-community/
-│   │   ├── /blog/church-prayer-requests-guide/
-│   │   └── /blog/start-prayer-ministry/
-│   │
-│   ├── Events & Check-ins:
-│   │   ├── /blog/church-check-in-guide/
-│   │   ├── /blog/kids-ministry-check-in-security/
-│   │   └── /blog/tracking-church-attendance/
-│   │
-│   ├── Outreach & Mapping:
-│   │   ├── /blog/church-mapping-benefits/
-│   │   ├── /blog/church-outreach-strategies/
-│   │   ├── /blog/community-outreach-ideas/
-│   │   ├── /blog/map-church-congregation/
-│   │   ├── /blog/plan-church-locations/
-│   │   └── /blog/track-church-outreach/
-│   │
-│   ├── Visitor Management:
-│   │   ├── /blog/church-visitor-follow-up/
-│   │   ├── /blog/church-welcome-team/
-│   │   ├── /blog/pastoral-care-follow-up/
-│   │   └── /blog/welcome-first-time-visitors/
-│   │
-│   ├── Volunteer Management:
-│   │   ├── /blog/recruit-church-volunteers/
-│   │   ├── /blog/reduce-volunteer-no-shows/
-│   │   └── /blog/volunteer-scheduling-best-practices/
-│   │
-│   ├── Small Groups:
-│   │   ├── /blog/grow-small-group-ministry/
-│   │   ├── /blog/organize-small-groups/
-│   │   └── /blog/small-group-leader-guide/
-│   │
-│   └── Analytics & Reports:
-│       ├── /blog/essential-church-reports/
-│       └── /blog/track-member-engagement/
+│   ├── ... (27+ total articles)
 │
 ├── 📧 Contact (/contact/)
 │   └── index.html
@@ -93,47 +60,19 @@ swapp.church/
 ├── 🔒 Privacy Policy (/privacy/)
 │   └── index.html
 │
-└── 🗺️ Sitemap (/sitemap.xml)
-
+├── 🗺️ Sitemap (/sitemap.xml)
+│
+└── 🛠️ Redirects (/_redirects) ⭐ NEW!
 ```
 
 ## 🎯 Navigation Flow
 
 ### Main Navigation (Header)
 ```
-Home → Features → Church App → Blog → Contact
-  ↓        ↓          ↓         ↓       ↓
-  /    /features/  /church-app/ /blog/ /contact/
+Home → Features → Free Church App → Church App → Blog → Contact
+  ↓        ↓              ↓               ↓         ↓       ↓
+  /    /features/ /free-church-app/   /church-app/ /blog/ /contact/
 ```
-
-### Features Section Flow
-```
-Homepage → Features Landing → Individual Feature Pages
-    /    →    /features/    →   /features/{feature-name}/
-```
-
-### Content Hierarchy
-
-**Level 1: Main Pages**
-- `/` - Homepage
-- `/features/` - Features Overview ⭐ NEW
-- `/church-app/` - Church App Info
-- `/blog/` - Blog Home
-- `/contact/` - Contact Form
-
-**Level 2: Feature Pages (9 total)**
-- `/features/giving/`
-- `/features/prayer-requests/`
-- `/features/check-ins/`
-- `/features/outreach/`
-- `/features/mapping/`
-- `/features/follow-up-and-outreach/`
-- `/features/new-visitor-intake/`
-- `/features/volunteer-scheduling/`
-- `/features/group-management/`
-
-**Level 2: Blog Articles (27 total)**
-- Organized by topic (see tree above)
 
 ## 📈 SEO Structure
 
@@ -142,54 +81,37 @@ Homepage → Features Landing → Individual Feature Pages
 Clean URLs with directory-based routing:
 ✅ /features/giving/
 ✅ /blog/increase-church-giving/
-❌ /features/giving.html (not used)
+✅ /free-church-app/
 ```
 
-### Internal Linking Strategy
-```
-Homepage
-  ├─→ Features Landing (NEW hub page)
-  │     ├─→ Individual Feature Pages
-  │     └─→ Related Blog Articles
-  │
-  ├─→ Blog Home
-  │     └─→ Individual Articles
-  │           └─→ Related Features
-  │
-  └─→ Church App
-        └─→ Features
-```
+### 301 Redirect Consolidation
+All legacy URLs (from previous site versions) and name changes (e.g. `prayer-wall` → `prayer-requests`) are handled via the `/_redirects` file to preserve SEO authority and eliminate 404 errors.
 
 ## 🎨 Page Types
 
-1. **Landing Pages** (2)
+1. **Strategic Landing Pages** (3)
    - Homepage (`/`)
-   - Features Landing (`/features/`) ⭐ NEW
+   - Features Landing (`/features/`)
+   - Free Church App Landing (`/free-church-app/`) ⭐ NEW
 
 2. **Feature Pages** (9)
    - Individual feature detail pages
 
-3. **Blog Pages** (28)
-   - Blog home + 27 articles
+3. **Blog Pages** (30+)
+   - Blog home + extensive library of ministry guides
 
 4. **Utility Pages** (3)
    - Contact, Privacy, Church App
 
-**Total Pages: 42**
+**Total Pages: 45+**
 
 ## 🔗 Key CTAs Throughout Site
 
 - **Start Free Trial** → `https://theswapp.io/register?referral_code=zuPaoR`
 - **Phone** → `tel:6169148392`
-- **Contact** → `/contact/`
-
-## 📱 Mobile-First Design
-All pages are responsive and optimized for:
-- Desktop (1200px+)
-- Tablet (768px - 1199px)
-- Mobile (< 768px)
+- **Contact Form** → `/contact/`
 
 ---
 
-**Last Updated:** 2026-01-23
-**Status:** ✅ All pages functional and SEO-optimized
+**Last Updated:** 2026-01-30
+**Status:** ✅ Site architecture optimized for Google Search Console indexing and technical SEO.
