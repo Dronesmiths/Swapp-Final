@@ -2,6 +2,10 @@ Options -Indexes
 DirectoryIndex index.html
 RewriteEngine On
 
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 # Ensure trailing slashes
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*[^/])$ /$1/ [L,R=301]
@@ -10,6 +14,10 @@ RewriteRule ^(.*[^/])$ /$1/ [L,R=301]
 Redirect 301 /features/prayer-wall/ /features/prayer-requests/
 Redirect 301 /privacy-policy/ /privacy/
 Redirect 301 /contact-us/ /contact/
+
+# Orientation Migration (To bypass legacy welcome loops)
+Redirect 301 /welcome/ /orientation/
+Redirect 301 /welcome-1/ /orientation/
 
 # Handle login paths
 RewriteRule ^sign-in/?$ /login/ [L,R=301]
