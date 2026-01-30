@@ -1,0 +1,21 @@
+# SWAPP Apache Configuration
+Options -Indexes
+RewriteEngine On
+
+# Ensure trailing slashes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*[^/])$ /$1/ [L,R=301]
+
+# Custom Redirects (Converted from _redirects)
+Redirect 301 /features/prayer-wall/ /features/prayer-requests/
+Redirect 301 /privacy-policy/ /privacy/
+Redirect 301 /contact-us/ /contact/
+Redirect 301 /wp-admin/ /
+Redirect 301 /wp-login.php /
+Redirect 301 /xmlrpc.php /
+
+# Handle login paths
+RewriteRule ^sign-in/?$ /login/ [L,R=301]
+
+# Error Handling
+ErrorDocument 404 /index.html

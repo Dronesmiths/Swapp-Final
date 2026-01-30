@@ -1,0 +1,20 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/mediusa/public_html
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
+    - /bin/cp robots.txt $DEPLOYPATH
+    - /bin/cp sitemap.xml $DEPLOYPATH
+    - /bin/cp signin.html $DEPLOYPATH
+    - /bin/cp unique_check.html $DEPLOYPATH
+    - /bin/cp -r css $DEPLOYPATH
+    - /bin/cp -r js $DEPLOYPATH
+    - /bin/cp -r blog $DEPLOYPATH
+    - /bin/cp -r features $DEPLOYPATH
+    - /bin/cp -r free-church-app $DEPLOYPATH
+    - /bin/cp -r church-app $DEPLOYPATH
+    - /bin/cp -r contact $DEPLOYPATH
+    - /bin/cp -r privacy $DEPLOYPATH
+    - /bin/cp -r login $DEPLOYPATH
+    - /bin/cp -r test $DEPLOYPATH
