@@ -6,16 +6,6 @@
 /features/cricket-control/ /features/ 301
 /features/cockroach/ /features/ 301
 
-/website_2a245b47/* / 301
-/blog/category/* /blog/ 301
-/category/* /blog/ 301
-/blog/tag/* /blog/ 301
-/tag/* /blog/ 301
-/blog/author/* /blog/ 301
-/author/* /blog/ 301
-/blog/what-is-the-goal-of-church-outreach/ /blog/church-outreach-strategies/ 301
-/wp-content/* /images/ 301
-/wp-includes/* /js/ 301
 /wp-admin/* / 301
 /wp-login.php / 301
 /xmlrpc.php / 301
