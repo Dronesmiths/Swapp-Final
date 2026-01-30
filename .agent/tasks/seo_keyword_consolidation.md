@@ -7,10 +7,12 @@ Consolidate and optimize the website content to target high-impression, low-clic
 - [x] Create a dedicated Pricing page for "church app cost" keywords.
 - [x] Create a "Pillars of the Church App" blog post to target foundational SEO terms.
 - [x] Optimize existing feature cards on the Homepage and Features page for "Soul Winning" and "Attendance Tracking".
-- [ ] Ensure consistent navigation (Header/Footer) across all pages including the new Pricing page.
-- [ ] Incorporate "Church CRM" keywords into the Group Management feature page.
-- [ ] Add the new blog post to the main blog index.
-- [ ] Update internal linking between landing pages and the pricing page to drive conversions.
+- [x] Update internal linking between landing pages and the pricing page to drive conversions.
+- [/] SEO Phase 3: AI, Lead Management, and CRM Blog Content
+    - [ ] Optimize Visitor Intake for "Digital Guest Cards".
+    - [ ] Inject AI keywords into Follow-Up and Reports.
+    - [ ] Create "Best Church CRM for Small Churches" blog post.
+    - [ ] Fix inconsistent navigation in feature subdirectories.
 
 ## Success Criteria
 - All new pages are indexed in the sitemap.
