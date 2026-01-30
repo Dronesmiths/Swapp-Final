@@ -1,5 +1,5 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home1/spreaeb3/public_html/website_32ccb616
+    - export DEPLOYPATH=/home1/spreaeb3/public_html/website_2a245b47
     - /bin/cp -rv * $DEPLOYPATH
     - /bin/cp -v .htaccess $DEPLOYPATH
