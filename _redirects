@@ -6,7 +6,7 @@
 /features/cricket-control/ /features/ 301
 /features/cockroach/ /features/ 301
 
-# Legacy Blog/WP Redirects
+/website_2a245b47/* / 301
 /blog/category/* /blog/ 301
 /category/* /blog/ 301
 /blog/tag/* /blog/ 301
@@ -60,7 +60,6 @@
 /church-website/ / 301
 /14-2/ / 301
 /long-beach-2/ / 301
-/pricing/* /church-app/ 301
 /church-crm/ / 301
 /church-website/ / 301
 /pricing-insights/ /church-app/ 301
@@ -76,7 +75,7 @@
 /product/* /church-app/ 301
 /church/growth/ /features/ 301
 /church/prayer/ /features/prayer-requests/ 301
-/church/* / 301
+/church/ / 301
 /sitemap-*.xml /sitemap.xml 301
 /sitemap-*.html / 301
 /services-v1/* /features/ 301

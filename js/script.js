@@ -76,35 +76,40 @@ document.addEventListener('DOMContentLoaded', () => {
             'call tech now',
             'working class hvac',
             'in the neighborhood',
-            'not before they fill up'
+            'not before they fill up',
+            'service call',
+            'ac repair',
+            'heating maintenance'
         ];
 
         // Target common 3rd party popup containers and keyword matches
-        const elements = document.querySelectorAll('h1, h2, h3, h4, p, a, div, span, [class*="elfsight"], [id*="elfsight"]');
+        // Also target common auto-generated IDs/classes from popular popup builders
+        const elements = document.querySelectorAll('h1, h2, h3, h4, p, a, div, span, [class*="elfsight"], [id*="elfsight"], [class*="popup"], [id*="popup"]');
 
         elements.forEach(el => {
-            const content = el.innerText.toLowerCase();
+            const content = (el.innerText || el.textContent || '').toLowerCase();
             const hasLegacyKeyword = keywords.some(k => content.includes(k));
-            const isElfsight = el.classList.contains('elfsight-app') || el.id.includes('elfsight');
+            const isLegacyLink = el.tagName === 'A' && (el.href.includes('6614948075') || el.href.includes('workingclasshvac'));
+            const isElfsight = el.classList.contains('elfsight-app') || (el.id && el.id.includes('elfsight'));
 
-            if (hasLegacyKeyword || isElfsight) {
+            if (hasLegacyKeyword || isLegacyLink || isElfsight) {
                 // Find the highest-level parent that is likely the popup container
                 let container = el;
-                // If it's a specific keyword match inside a div, we want to kill the whole widget
+                // We want to kill the whole widget, but stop before killing the theme containers
+                const stopSelectors = ['.container', '.aw-footer', 'header', 'main', 'body', 'html'];
+
                 while (container.parentElement &&
-                    !container.classList.contains('container') &&
-                    container.parentElement.tagName !== 'BODY' &&
-                    container.parentElement.tagName !== 'HTML') {
+                    !stopSelectors.some(s => container.classList.contains(s.substring(1)) || container.tagName === s.toUpperCase())) {
                     container = container.parentElement;
                 }
 
-                // If the container is the body or html, only remove the element itself
-                if (container.tagName === 'BODY' || container.tagName === 'HTML') {
+                if (container && container !== document.body && container !== document.documentElement) {
+                    console.log('Ghost Section Killed:', content.substring(0, 30));
+                    container.style.display = 'none'; // Hide immediately
+                    container.remove(); // Then remove
+                } else if (el && el.parentElement) {
                     el.remove();
-                } else {
-                    container.remove();
                 }
-                console.log('Ghost Section Killed:', content.substring(0, 30));
             }
         });
     };

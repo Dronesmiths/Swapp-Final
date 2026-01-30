@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to SWAPP | Congratulations on Joining!</title>
+    <meta name="description"
+        content="Welcome to the SWAPP family. Watch our orientation video and follow our getting started guide to launch your modern church ministry today.">
+    <link rel="canonical" href="https://swapp.church/welcome/">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/styles.css?v=2.2">
+
+    <style>
+        /* Welcome Page Styles */
+        .welcome-hero {
+            background: linear-gradient(135deg, #f0fdf4, #dcfce7, #e0f2fe);
+            padding: 120px 20px 60px;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+
+        .welcome-hero h1 {
+            font-size: 52px;
+            font-weight: 900;
+            color: #065f46;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .welcome-hero p {
+            font-size: 22px;
+            color: #166534;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+
+        /* Video Section */
+        .video-container {
+            max-width: 900px;
+            margin: 0 auto 80px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            background: #000;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Onboarding Steps */
+        .onboarding-section {
+            padding: 80px 20px;
+            background: #fff;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            font-weight: 800;
+            color: #1f2937;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .step-card {
+            background: #f9fafb;
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid #f3f4f6;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            background: #fff;
+            border-color: #22c55e;
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: #22c55e;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .step-card h3 {
+            font-size: 22px;
+            color: #065f46;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .step-card p {
+            color: #4b5563;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .btn-step {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #2563eb;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: opacity 0.3s;
+        }
+
+        .btn-step:hover {
+            opacity: 0.9;
+        }
+
+        /* Newsletter / Next Phase */
+        .community-cta {
+            background: #065f46;
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+            border-radius: 0;
+        }
+
+        .community-cta h2 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .community-cta p {
+            font-size: 18px;
+            color: #d1fae5;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        @media (max-width: 768px) {
+            .welcome-hero h1 {
+                font-size: 36px;
+            }
+
+            .welcome-hero p {
+                font-size: 18px;
+            }
+
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="/" class="logo logo-simple">
+                <span class="swapp-brand-text">SWAPP</span>
+            </a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/features/">Features</a></li>
+                    <li><a href="/free-church-app/">Free Church App</a></li>
+                    <li><a href="/pricing/">Pricing</a></li>
+                    <li><a href="/church-app/">Church App</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:6169148392" class="phone-link mobile-hide"><i class="fas fa-phone"></i> (616) 914-8392</a>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome-hero">
+            <div class="container">
+                <h1>Welcome to the Family! 🙌</h1>
+                <p>We're thrilled to partner with you in modernizing your ministry. Before you dive in, watch this quick
+                    orientation video to see how SWAPP will transform your church workflow.</p>
+
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <!-- Placeholder for orientation video -->
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&showinfo=0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="onboarding-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>What Now? Let's Get Started.</h2>
+                    <p>Follow these three simple steps to set up your ministry for success.</p>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Check Your Inbox</h3>
+                        <p>We've sent you a verification email and a "Fast-Start Guide" PDF. Please verify your account
+                            to unlock all features.</p>
+                        <a href="https://theswapp.io/login" class="btn-step">Sign In to Dashboard</a>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Import Your People</h3>
+                        <p>Don't start from scratch! Use our bulk importer to bring your members, groups, and giving
+                            history into SWAPP in minutes.</p>
+                        <a href="https://help.swapp.church/article/import-data" class="btn-step"
+                            style="background: #10b981;">Read Import Guide</a>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Invite Your Leadership</h3>
+                        <p>Ministry is better together. Add your staff and volunteer leads so they can start scheduling
+                            services and tracking outreach.</p>
+                        <a href="https://help.swapp.church/article/adding-users" class="btn-step"
+                            style="background: #059669;">Add Team Members</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="community-cta">
+            <div class="container">
+                <h2>Need a Hand?</h2>
+                <p>Our US-based support team is here to help you every step of the way. Whether you need help with data
+                    migration or setting up your custom church app, we've got you covered.</p>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://help.swapp.church" class="cta-primary"
+                        style="background: #fff; color: #065f46;">Visit Help Center</a>
+                    <a href="/contact/" class="cta-secondary" style="border-color: #fff; color: #fff;">Schedule Setup
+                        Call</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="aw-footer">
+        <div class="container aw-footer-inner">
+            <div class="aw-footer-brand">
+                <h3>SWAPP</h3>
+                <p>All-in-One Church App + CRM</p>
+                <p class="aw-footer-phone"><span>📞</span><a href="tel:6169148392">(616) 914-8392</a></p>
+                <p class="aw-footer-email"><span>✉️</span><a href="/contact/">Contact Us</a></p>
+            </div>
+            <div class="aw-footer-services">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/features/">Features</a></li>
+                    <li><a href="/free-church-app/">Free Church App</a></li>
+                    <li><a href="/pricing/">Pricing</a></li>
+                    <li><a href="/church-app/">Church App</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+            <div class="aw-footer-locations">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="/contact/">Contact Us</a></li>
+                    <li><a href="https://help.swapp.church">Help Center</a></li>
+                    <li><a href="/privacy/">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="aw-footer-bottom">
+            <p>© <span id="year"></span> SWAPP. All rights reserved. | <a href="/sitemap.xml"
+                    style="color:inherit;text-decoration:underline">Sitemap</a> | <a href="/privacy/"
+                    style="color:inherit;text-decoration:underline">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

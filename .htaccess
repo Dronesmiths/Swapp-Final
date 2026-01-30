@@ -10,6 +10,8 @@ RewriteRule ^(.*[^/])$ /$1/ [L,R=301]
 Redirect 301 /features/prayer-wall/ /features/prayer-requests/
 Redirect 301 /privacy-policy/ /privacy/
 Redirect 301 /contact-us/ /contact/
+Redirect 301 /website_2a245b47/ /
+Redirect 301 /index.php /
 Redirect 301 /wp-admin/ /
 Redirect 301 /wp-login.php /
 Redirect 301 /xmlrpc.php /
