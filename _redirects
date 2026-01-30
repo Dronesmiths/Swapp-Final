@@ -12,6 +12,8 @@
 /blog/author/* /blog/ 301
 /wp-content/* /images/ 301
 /wp-includes/* /js/ 301
+/*/feed/ /blog/ 301
+/feed/ /blog/ 301
 
 # Root-level Blog Posts to /blog/ (Legacy WP structure)
 /street-by-street-tracking/ /blog/track-church-outreach/ 301
