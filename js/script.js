@@ -67,28 +67,64 @@ document.addEventListener('DOMContentLoaded', () => {
         yearSpan.textContent = new Date().getFullYear();
     }
 
-    // GHOST SECTION KILLER (Removes legacy HVAC popups from server cache)
+    // GHOST SECTION KILLER (Removes legacy HVAC popups from server cache or 3rd party injections)
     const killGhostSections = () => {
-        const keywords = ['lose your cool', 'technician', '6614948075', 'call tech now'];
-        document.querySelectorAll('h1, h2, h3, h4, p, a, div, span').forEach(el => {
+        const keywords = [
+            'lose your cool',
+            'technician',
+            '6614948075',
+            'call tech now',
+            'working class hvac',
+            'in the neighborhood',
+            'not before they fill up'
+        ];
+
+        // Target common 3rd party popup containers and keyword matches
+        const elements = document.querySelectorAll('h1, h2, h3, h4, p, a, div, span, [class*="elfsight"], [id*="elfsight"]');
+
+        elements.forEach(el => {
             const content = el.innerText.toLowerCase();
-            if (keywords.some(k => content.includes(k))) {
+            const hasLegacyKeyword = keywords.some(k => content.includes(k));
+            const isElfsight = el.classList.contains('elfsight-app') || el.id.includes('elfsight');
+
+            if (hasLegacyKeyword || isElfsight) {
                 // Find the highest-level parent that is likely the popup container
                 let container = el;
+                // If it's a specific keyword match inside a div, we want to kill the whole widget
                 while (container.parentElement &&
                     !container.classList.contains('container') &&
-                    !['BODY', 'HTML'].includes(container.parentElement.tagName)) {
+                    container.parentElement.tagName !== 'BODY' &&
+                    container.parentElement.tagName !== 'HTML') {
                     container = container.parentElement;
                 }
-                container.remove();
-                console.log('Ghost Section Killed:', content.substring(0, 20));
+
+                // If the container is the body or html, only remove the element itself
+                if (container.tagName === 'BODY' || container.tagName === 'HTML') {
+                    el.remove();
+                } else {
+                    container.remove();
+                }
+                console.log('Ghost Section Killed:', content.substring(0, 30));
             }
         });
     };
 
-    // Run immediately and again after a short delay for late-injecting scripts
+    // Run immediately and again after a short delay
     killGhostSections();
+
+    // Persistent monitoring for late-injected scripts (like Elfsight)
+    const observer = new MutationObserver((mutations) => {
+        killGhostSections();
+    });
+
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+
+    // Final fallback cleanup
     setTimeout(killGhostSections, 1000);
     setTimeout(killGhostSections, 3000);
+    setTimeout(killGhostSections, 5000);
 });
 
