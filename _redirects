@@ -10,6 +10,7 @@
 /blog/category/* /blog/ 301
 /blog/tag/* /blog/ 301
 /blog/author/* /blog/ 301
+/blog/what-is-the-goal-of-church-outreach/ /blog/church-outreach-strategies/ 301
 /wp-content/* /images/ 301
 /wp-includes/* /js/ 301
 /*/feed/ /blog/ 301
