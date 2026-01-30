@@ -8,8 +8,11 @@
 
 # Legacy Blog/WP Redirects
 /blog/category/* /blog/ 301
+/category/* /blog/ 301
 /blog/tag/* /blog/ 301
+/tag/* /blog/ 301
 /blog/author/* /blog/ 301
+/author/* /blog/ 301
 /blog/what-is-the-goal-of-church-outreach/ /blog/church-outreach-strategies/ 301
 /wp-content/* /images/ 301
 /wp-includes/* /js/ 301
@@ -42,22 +45,76 @@
 /home/ / 301
 /contact-us/ /contact/ 301
 /privacy-policy/ /privacy/ 301
+/privacy-policy /privacy/ 301
+/cookies-policy/ /privacy/ 301
+/swapp-accessibility-statement/ /privacy/ 301
+/disclaimer/ /privacy/ 301
+/about-us/ / 301
+/thank-you/ / 301
 /testimonials/ / 301
+/church-software/ / 301
+/church-management-software/ / 301
+/church-management-app/ /church-app/ 301
+/mobile-church-app/ /church-app/ 301
+/church-crm/ / 301
+/church-website/ / 301
+/14-2/ / 301
+/long-beach-2/ / 301
 /pricing/* /church-app/ 301
 /church-crm/ / 301
 /church-website/ / 301
-/church-app-insights/ /church-app/ 301
+/pricing-insights/ /church-app/ 301
+/church-app/events/ /features/check-ins/ 301
 /church-app/messaging/ /features/group-management/ 301
 /church-app/volunteer-scheduling/ /features/volunteer-scheduling/ 301
 /church-app/group-management/ /features/group-management/ 301
 /church-app/new-visitor-intake/ /features/new-visitor-intake/ 301
+/church-app/giving/ /features/giving/ 301
+/church-app/follow-up-and-outreach/ /features/follow-up-and-outreach/ 301
+/secure-church-only-access/ /features/ 301
+/real-time-team-statistics/ /features/ 301
+/product/* /church-app/ 301
+/church/growth/ /features/ 301
+/church/prayer/ /features/prayer-requests/ 301
+/church/* / 301
+/sitemap-*.xml /sitemap.xml 301
+/sitemap-*.html / 301
 /services-v1/* /features/ 301
 /services-v2/* /features/ 301
 /help-center/ https://help.swapp.church 301
 /faqs/ /free-church-app/#faq 301
+
+# Missing Ministry Slugs
+/how-can-i-make-my-church-engaging-more/ /blog/ 301
+/how-to-grow-church-attendance/ /blog/tracking-church-attendance/ 301
+/revamp-your-church-website-7-easy-spring-clearing-tips-4/ /blog/ 301
+/why-are-our-prayers-sometimes-not-answered/ /blog/start-prayer-ministry/ 301
+/what-does-leviticus-1918-say/ /blog/ 301
+/features-3/ /features/ 301
+/how-to-grow-the-church-numerically/ /blog/ 301
+/are-free-church-apps-actually-free-2/ /free-church-app/ 301
+/the-hidden-costs-of-free-church-apps/ /free-church-app/ 301
+
+# Additional Blog & Content Redirects
+/plan-your-church-for-the-future/ /blog/ 301
+/is-a-church-crm-worth-it/ /blog/ 301
+/ultimate-guide-to-using-church-apps-for-online-donations/ /blog/best-church-giving-platforms/ 301
+/mobile-strategy-for-effective-discipleship-tools/ /blog/ 301
+/how-to-use-a-church-app-for-crisis-communication-2025/ /blog/ 301
+/the-role-of-mobile-apps-in-modern-hybrid-worship/ /blog/ 301
+/the-role-of-mobile-apps-in-modern-sunday-planning/ /blog/ 301
+/whos-responsible-for-member-engagement/ /blog/track-member-engagement/ 301
+/what-is-the-best-church-app-for-small-churches/ /blog/best-free-church-apps/ 301
+/sunday-planning-made-easy-with-mobile-church-apps/ /blog/ 301
+/how-to-get-seniors-comfortable-with-using-your-church-app-vs-other-church-tech-tools/ /blog/ 301
+/how-a-church-app-can-support-family-devotionals-that-deliver-real-results/ /blog/ 301
+/what-happens-to-visitors-who-dont-get-followed-up/ /blog/church-visitor-follow-up/ 301
+/category/blog/ /blog/ 301
+/blog-2/ /blog/ 301
 
 # Root/Default Redirects for common 404s
 /blog/swapp-vs-subsplash/ /blog/best-free-church-apps/ 301
 /swapp-vs-subsplash/ /blog/best-free-church-apps/ 301
 /blog/how-to-budget-for-a-church-app-in-2025/ /blog/ 301
 /affordable-church-apps/how-to-budget-for-a-church-app-in-2025/ /blog/ 301
+/testing/ / 301
