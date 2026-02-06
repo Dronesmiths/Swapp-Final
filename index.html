@@ -78,9 +78,25 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <a href="/" class="logo logo-simple">
+            <!-- Left: Hamburger -->
+            <button class="mobile-menu-btn" aria-label="Open navigation">
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg>
+            </button>
+
+            <!-- Center: Logo -->
+            <a href="/" class="logo">
                 <span class="swapp-brand-text">SWAPP</span>
             </a>
+
+            <!-- Right: Actions -->
+            <div class="header-actions">
+                <a href="/login/" class="phone-link mobile-hide" style="margin-right: 15px;">Sign In</a>
+                <a href="https://theswapp.io/register?referral_code=zuPaoR" class="btn btn-primary">Start Free Trial</a>
+            </div>
+
+            <!-- Sidebar Navigation (Hidden by default) -->
             <nav class="nav-menu">
                 <ul>
                     <li><a href="/" class="active">Home</a></li>
@@ -89,16 +105,10 @@
                     <li><a href="/pricing/">Pricing</a></li>
                     <li><a href="/church-app/">Church App</a></li>
                     <li><a href="/blog/">Blog</a></li>
-                    <li><a href="/help/">Help</a></li>
-                    <li><a href="/contact/">Contact</a></li>
+                    <li><a href="/help/">Help Center</a></li>
+                    <li><a href="/contact/">Contact Us</a></li>
                 </ul>
             </nav>
-            <div class="header-actions">
-                <a href="tel:6169148392" class="phone-link mobile-hide"><i class="fas fa-phone"></i> (616) 914-8392</a>
-                <a href="/login/" class="phone-link" style="margin-right: 15px;">Sign In</a>
-                <a href="https://theswapp.io/register?referral_code=zuPaoR" class="btn btn-primary">Start Free Trial</a>
-                <button class="mobile-menu-btn" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
-            </div>
         </div>
     </header>
 
