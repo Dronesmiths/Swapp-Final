@@ -3,7 +3,7 @@
  * Powered by Gemini API & Knowledge Base
  */
 
-const GEMINI_API_KEY = "AIzaSyA35jRybn6aEw_MNjsAS9EiV900-uID5R4";
+const GEMINI_API_KEY = "AIzaSyAAqjLt4Q_O4Kb4zEbZOoDuU8416rBJDXk";
 const KB_PATH = "/knowledge/integrated_kb.md";
 
 class SwappChatAgent {
