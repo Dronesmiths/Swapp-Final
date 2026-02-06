@@ -1,0 +1,6 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "swapp-final"
+pages_build_output_dir = "."
+
+[vars]
+# Add any environment variables here

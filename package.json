@@ -1,0 +1,13 @@
+{
+  "name": "swapp-final",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler pages dev . --compatibility-date=2024-04-03",
+    "deploy": "wrangler pages deploy .",
+    "pages:dev": "wrangler pages dev . --compatibility-date=2024-04-03"
+  },
+  "devDependencies": {
+    "wrangler": "^3.107.2"
+  }
+}
