@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWAPP Documentation - Professional Church Outreach Manual</title>
+    <meta name="description"
+        content="The official manual for SWAPP. Learn professional mapping strategies, outreach management, and advanced troubleshooting for your church.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --doc-sidebar-width: 280px;
+            --doc-accent: #00d4ff;
+            --doc-bg: #f8fafc;
+            --doc-card-bg: #ffffff;
+            --doc-border: #e2e8f0;
+            --doc-text: #1e293b;
+            --doc-text-light: #64748b;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--doc-bg);
+            color: var(--doc-text);
+            line-height: 1.6;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            color: #0f172a;
+        }
+
+        .doc-layout {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+            min-height: calc(100vh - 80px);
+            padding: 2rem;
+            gap: 3rem;
+        }
+
+        /* Sidebar Navigation */
+        .doc-sidebar {
+            width: var(--doc-sidebar-width);
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+            overflow-y: auto;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 16px;
+            border: 1px solid var(--doc-border);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .doc-sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .doc-sidebar-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--doc-text-light);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .doc-sidebar li {
+            margin-bottom: 0.5rem;
+        }
+
+        .doc-sidebar a {
+            text-decoration: none;
+            color: var(--doc-text);
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: block;
+            padding: 0.5rem 0.75rem;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .doc-sidebar a:hover {
+            color: var(--doc-accent);
+            background: #f1f5f9;
+        }
+
+        /* Content Area */
+        .doc-content {
+            flex: 1;
+            max-width: 900px;
+        }
+
+        .doc-section {
+            background: var(--doc-card-bg);
+            padding: 3rem;
+            border-radius: 24px;
+            border: 1px solid var(--doc-border);
+            margin-bottom: 3rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .doc-section h2 {
+            font-size: 2.25rem;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .doc-section h2::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 32px;
+            background: var(--doc-accent);
+            border-radius: 4px;
+        }
+
+        .doc-section h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #334155;
+        }
+
+        .pro-tip {
+            background: #f0fdff;
+            border-left: 4px solid var(--doc-accent);
+            padding: 1.5rem;
+            border-radius: 0 12px 12px 0;
+            margin: 2rem 0;
+        }
+
+        .pro-tip strong {
+            color: #0c4a6e;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+        }
+
+        .trouble-card {
+            background: #fffafa;
+            border: 1px solid #fecaca;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+        }
+
+        .trouble-card strong {
+            color: #b91c1c;
+        }
+
+        .code-block {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 0.9rem;
+            margin: 1rem 0;
+        }
+
+        /* Footer links */
+        .doc-footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--doc-border);
+        }
+
+        @media (max-width: 1024px) {
+            .doc-layout {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .doc-sidebar {
+                position: relative;
+                top: 0;
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+
+<body>
+    <header class="site-header" role="banner">
+        <nav class="nav" aria-label="Main navigation">
+            <div class="brand"><a href="/" class="logo" aria-label="Go to home">SWAPP</a></div>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="help.html" class="active">Help Center</a></li>
+                <li><a href="https://theswapp.io/sign-in" target="_blank" rel="noopener">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="doc-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="doc-sidebar">
+            <div class="doc-sidebar-title">The Launch Guide</div>
+            <ul>
+                <li><a href="#philosophy">Our Mission</a></li>
+                <li><a href="#step1">Step 1: Registration</a></li>
+                <li><a href="#step2">Step 2: Branding</a></li>
+                <li><a href="#step3">Step 3: geography</a></li>
+                <li><a href="#step4">Step 4: Drawing Maps</a></li>
+                <li><a href="#step5">Step 5: Your Team</a></li>
+            </ul>
+            <div class="doc-sidebar-title">Advanced</div>
+            <ul>
+                <li><a href="#crm">CRM & Lead Capture</a></li>
+                <li><a href="#pro-strategies">Pro Strategies</a></li>
+            </ul>
+            <div class="doc-sidebar-title">Account</div>
+            <ul>
+                <li><a href="#billing">Pricing & Billing</a></li>
+                <li><a href="#troubleshooting">Troubleshooting</a></li>
+            </ul>
+        </aside>
+
+        <!-- Content -->
+        <main class="doc-content">
+            <!-- 1. Philosophy -->
+            <section id="philosophy" class="doc-section">
+                <h2>Our Mission</h2>
+                <p>SWAPP is built to transition church software from staff-heavy business management to
+                    <strong>member-centric engagement</strong>. We aim to reach every door and nurture every soul by
+                    providing simple, powerful tools to the hands of the people.
+                </p>
+                <div class="pro-tip">
+                    <strong>The SWAPP Goal</strong>
+                    Offload administrative workloads from staff while giving members tools to be better engaged with
+                    their church and one another.
+                </div>
+            </section>
+
+            <!-- 2. Step 1: Registration -->
+            <section id="step1" class="doc-section">
+                <h2>Step 1: Registration</h2>
+                <div class="video-placeholder"
+                    style="background: #e2e8f0; border-radius: 12px; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; border: 2px dashed #cbd5e1;">
+                    <div style="text-align: center; color: #64748b;">
+                        <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🎬</span>
+                        <strong>Tutorial Coming Soon</strong><br>
+                        <small>Topic: Church Registration & First Login</small>
+                    </div>
+                </div>
+                <p>Register your church at <code>thesoulwinningapp.com</code>. You'll need to Provide your church name,
+                    address, and primary administrator email.</p>
+                <div class="pro-tip">
+                    <strong>Admin Tip</strong>
+                    The first account created is the **Head Admin**. Only you can access billing and church-wide
+                    security settings.
+                </div>
+            </section>
+
+            <!-- 3. Step 2: Branding -->
+            <section id="step2" class="doc-section">
+                <h2>Step 2: Branding & Settings</h2>
+                <div class="video-placeholder"
+                    style="background: #e2e8f0; border-radius: 12px; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; border: 2px dashed #cbd5e1;">
+                    <div style="text-align: center; color: #64748b;">
+                        <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🎬</span>
+                        <strong>Tutorial Coming Soon</strong><br>
+                        <small>Topic: Logo, Giving Links, & Security</small>
+                    </div>
+                </div>
+                <p>Navigate to the <strong>Settings</strong> tab in your Dashboard to customize the app for your
+                    members.</p>
+                <ul>
+                    <li><strong>Logo</strong>: Upload your church logo (PNG preferred) to replace SWAPP branding.</li>
+                    <li><strong>Giving Links</strong>: Add Tithely, PayPal, or custom URLs for member convenience.</li>
+                    <li><strong>Church Password</strong>: Set a "Joining Password" to keep your database private.</li>
+                </ul>
+            </section>
+
+            <!-- 4. Step 3: Geography -->
+            <section id="step3" class="doc-section">
+                <h2>Step 3: Organizing Geography</h2>
+                <div class="video-placeholder"
+                    style="background: #e2e8f0; border-radius: 12px; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; border: 2px dashed #cbd5e1;">
+                    <div style="text-align: center; color: #64748b;">
+                        <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🎬</span>
+                        <strong>Tutorial Coming Soon</strong><br>
+                        <small>Topic: Creating Folders & Zones</small>
+                    </div>
+                </div>
+                <p>Before drawing maps, you must create <strong>Folders</strong>. Think of these as "Territories" or
+                    "Zones".</p>
+                <p>Example: <em>North Zone, South Zone, Downtown.</em></p>
+                <div class="pro-tip">
+                    <strong>Pro Planning</strong>
+                    Group folders by major geographic boundaries (highways, rivers, or main roads) to help members
+                    navigate easily.
+                </div>
+            </section>
+
+            <!-- 5. Step 4: Drawing Maps -->
+            <section id="step4" class="doc-section">
+                <h2>Step 4: Drawing Your Maps</h2>
+                <div class="video-placeholder"
+                    style="background: #e2e8f0; border-radius: 12px; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; border: 2px dashed #cbd5e1;">
+                    <div style="text-align: center; color: #64748b;">
+                        <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🎬</span>
+                        <strong>Tutorial Coming Soon</strong><br>
+                        <small>Topic: Drawing Maps & Target Sizing</small>
+                    </div>
+                </div>
+                <p>Inside a folder, click <strong>Create Map</strong>. Use the Polyline tool to trace the streets you
+                    want to include.</p>
+                <ul>
+                    <li><strong>Target Size</strong>: We recommend 30-60 doors per map for a 90-minute outreach session.
+                    </li>
+                    <li><strong>Naming</strong>: Use consistent IDs like <code>North-01</code> or <code>A-12</code>.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 6. Step 5: Your Team -->
+            <section id="step5" class="doc-section">
+                <h2>Step 5: Inviting Your Team</h2>
+                <div class="video-placeholder"
+                    style="background: #e2e8f0; border-radius: 12px; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; border: 2px dashed #cbd5e1;">
+                    <div style="text-align: center; color: #64748b;">
+                        <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">🎬</span>
+                        <strong>Tutorial Coming Soon</strong><br>
+                        <small>Topic: Referral Codes & Roles</small>
+                    </div>
+                </div>
+                <p>Now that your maps are ready, it's time to bring in your soul winners.</p>
+                <ul>
+                    <li><strong>Referral Code</strong>: Share your church's unique code (found in Settings) so members
+                        can find you instantly.</li>
+                    <li><strong>Admin vs. Member</strong>: By default, users are "Members". Toggle trusted leaders to
+                        "Admin" in the <strong>Team</strong> tab to let them manage maps.</li>
+                </ul>
+                <div class="pro-tip">
+                    <strong>The Launch Day Experience</strong>
+                    <div class="video-placeholder"
+                        style="background: white; border-radius: 8px; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; margin: 1rem 0; border: 1px solid #e2e8f0;">
+                        <small style="color: #94a3b8;">Member Demo: Check-in / Check-out</small>
+                    </div>
+                    On outreach day, tell your members to "Check In" to a street. You'll see their progress in real-time
+                    on your dashboard.
+                </div>
+            </section>
+
+            <!-- 7. Advanced Strategies -->
+            <section id="pro-strategies" class="doc-section">
+                <h2>Pro Strategies</h2>
+                <p>For high-capacity ministries managing thousands of doors.</p>
+
+                <h3>The Spiral & Quadrant Method</h3>
+                <p>Start mapping at the church and work outward in increasing concentric circles. Use suffixes like NE,
+                    SE for large folders.</p>
+
+                <h3 id="apartments">Apartment & Multi-Unit Strategies</h3>
+                <p>Divide complexes with 30+ buildings into multiple maps (e.g. "Canyon Apts North" and "Canyon Apts
+                    South").</p>
+                <ul>
+                    <li><strong>Purple Pins</strong>: Use these for building-level documentation (gate codes, office
+                        hours).</li>
+                    <li><strong>Notes</strong>: Track specific units within a building pin.</li>
+                </ul>
+            </section>
+
+            <!-- 3. CRM & Lead Capture -->
+            <section id="crm" class="doc-section">
+                <h2>CRM & Lead Capture</h2>
+                <p>Manage your prospects and members through a structured database that syncs with the app in real-time.
+                </p>
+
+                <h3>Folders vs. All Contacts</h3>
+                <p>Every record exists in the <strong>All Contacts</strong> master list. Folders act as tags (e.g.,
+                    "Baptism Candidates," "VBS 2025"). Deleting a contact from a folder ONLY removes the tag; the record
+                    remains in the master list.</p>
+
+                <h3>Folder QR Codes</h3>
+                <p>Each folder can generate a unique QR code. When scanned, it opens a visitor form. Submissions are
+                    automatically tagged to that specific folder—perfect for event banners or visitor cards.</p>
+
+                <div class="pro-tip">
+                    <strong>Optimization Hint</strong>
+                    Select multiple contacts in the CRM and click the <strong>Street icon</strong> to generate an
+                    optimized driving/walking route for follow-up visits.
+                </div>
+            </section>
+
+            <!-- 4. Team & Administration -->
+            <section id="admin" class="doc-section">
+                <h2>Admin & Security</h2>
+                <p>Control access levels and protect your church's outreach data.</p>
+
+                <h3>Roles: Admin vs. Member</h3>
+                <ul>
+                    <li><strong>Admin</strong>: Full access to the Web Dashboard and all mapping folders on mobile.</li>
+                    <li><strong>Member</strong>: Mobile-only access. They only see folders toggled as "Visible" by the
+                        admin.</li>
+                </ul>
+
+                <div class="pro-tip">
+                    <strong>Security Note</strong>
+                    For security, sub-admins may have their role reset if they log out of the mobile app. A Head Admin
+                    can re-enable their status in the "Team" section of the Dashboard.
+                </div>
+
+                <h3>Church Joining Password</h3>
+                <p>Enable this in the Dashboard Settings to prevent unauthorized users from joining your church database
+                    when they download the app.</p>
+            </section>
+
+            <!-- 5. Troubleshooting -->
+            <section id="troubleshooting" class="doc-section">
+                <h2>Advanced Troubleshooting</h2>
+                <p>Common solutions for the most frequent support requests.</p>
+
+                <div class="trouble-card">
+                    <strong>Missing Verification Emails?</strong>
+                    Check your <strong>Spam</strong> or <strong>Promotions</strong> folder. Emails are sent instantly
+                    via OTP, but filters often trap them. We recommend marking <code>admin@theswapp.io</code> as a safe
+                    sender.
+                </div>
+
+                <div class="trouble-card">
+                    <strong>Login "Organization Not Found"</strong>
+                    Ensure your email address capitalization matches exactly on both Mobile and Desktop.
+                    <code>John@Email.com</code> is seen as a different account than <code>john@email.com</code>.
+                </div>
+
+                <div class="trouble-card">
+                    <strong>Map Still Red After Check-out?</strong>
+                    In the Dashboard, navigate to the <strong>Map List</strong> page and click the
+                    <strong>Refresh</strong> icon next to the street. This forces a sync across all devices.
+                </div>
+
+                <div class="trouble-card">
+                    <strong>"Undefined" Alert on Mobile</strong>
+                    This usually occurs on older hardware or outdated app versions. Ensure the app is updated to the
+                    latest version in the store. For pre-2018 phones, we recommend using the partner system or paper
+                    maps.
+                </div>
+            </section>
+
+            <!-- 6. Billing -->
+            <section id="billing" class="doc-section">
+                <h2>Pricing & Billing</h2>
+                <p>SWAPP tiers adjust automatically based on your <strong>Active App Users</strong>. You never pay for
+                    more than you are using.</p>
+                <ul>
+                    <li><strong>Starter</strong>: 0-2 Users - Always Free.</li>
+                    <li><strong>Basic</strong>: 3-20 Users - $19.99/mo.</li>
+                    <li><strong>Gold</strong>: 21-150 Users - $99/mo (Includes Website).</li>
+                    <li><strong>Platinum</strong>: 151+ Users - $199/mo.</li>
+                </ul>
+            </section>
+
+            <nav class="doc-footer-nav">
+                <a href="help.html" class="read-more">← Back to Help Center</a>
+                <a href="https://theswapp.io/register" class="btn primary">Start Using SWAPP</a>
+            </nav>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="inner">
+            <p>© 2025 SWAPP | <a href="mailto:admin@theswapp.io">admin@theswapp.io</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
