@@ -2,22 +2,28 @@ Options -Indexes
 DirectoryIndex index.html
 RewriteEngine On
 
-# Force HTTPS
+# Force HTTPS (Handles Load Balancers/Proxies)
 RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Ensure trailing slashes
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*[^/])$ /$1/ [L,R=301]
 
-# Custom Redirects (Converted from _redirects)
-Redirect 301 /features/prayer-wall/ /features/prayer-requests/
-Redirect 301 /privacy-policy/ /privacy/
-Redirect 301 /contact-us/ /contact/
+# Custom Redirects (Consolidated to RewriteRules)
+RewriteRule ^features/prayer-wall/?$ /features/prayer-requests/ [L,R=301]
+RewriteRule ^privacy-policy/?$ /privacy/ [L,R=301]
+RewriteRule ^contact-us/?$ /contact/ [L,R=301]
 
-# Orientation Migration (To bypass legacy welcome loops)
-Redirect 301 /welcome/ /orientation/
-Redirect 301 /welcome-1/ /orientation/
+# Orientation Migration (Bypass legacy welcome loops)
+RewriteRule ^welcome/?$ /orientation/ [L,R=301]
+RewriteRule ^welcome-1/?$ /orientation/ [L,R=301]
+
+# Legacy Traffic Preservation (From Analytics)
+RewriteRule ^church-app/check-ins/?$ /features/check-ins/ [L,R=301]
+RewriteRule ^church-app/giving/?$ /features/giving/ [L,R=301]
+RewriteRule ^pricing/check-ins-app/?$ /pricing/ [L,R=301]
 
 # Handle login paths
 RewriteRule ^sign-in/?$ /login/ [L,R=301]

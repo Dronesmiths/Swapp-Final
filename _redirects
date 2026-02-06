@@ -59,6 +59,8 @@
 /church-app/group-management/ /features/group-management/ 301
 /church-app/new-visitor-intake/ /features/new-visitor-intake/ 301
 /church-app/giving/ /features/giving/ 301
+/church-app/check-ins/ /features/check-ins/ 301
+/pricing/check-ins-app/ /pricing/ 301
 /church-app/follow-up-and-outreach/ /features/follow-up-and-outreach/ 301
 /secure-church-only-access/ /features/ 301
 /real-time-team-statistics/ /features/ 301
